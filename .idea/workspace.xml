@@ -4,7 +4,6 @@
     <list default="true" id="0098adae-dcae-4c43-b4b4-702489c39e01" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown" afterPath="$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-09-06-bloom-filter.markdown" afterPath="$PROJECT_DIR$/_posts/2016-09-06-bloom-filter.markdown" />
     </list>
     <ignored path="sophiesongge.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,8 +94,8 @@
       <file leaf-file-name="2016-08-31-first-post.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="135">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -867,12 +866,12 @@
       <workItem from="1472650179576" duration="559000" />
       <workItem from="1472651486616" duration="4382000" />
       <workItem from="1472717912755" duration="15000" />
-      <workItem from="1473153067662" duration="4640000" />
+      <workItem from="1473153067662" duration="4689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9596000" />
+    <option name="totallyTimeSpent" value="9645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="785" extended-state="0" />
@@ -1112,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
         </state>
       </provider>
