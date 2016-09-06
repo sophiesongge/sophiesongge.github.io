@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098adae-dcae-4c43-b4b4-702489c39e01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown" afterPath="$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
     </list>
     <ignored path="sophiesongge.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+            <state relative-caret-position="249">
+              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -60,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-08-31-first-post.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-08-31-first-post.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -273,8 +273,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_posts/2016-09-06-bloom-filter.markdown" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -805,12 +805,12 @@
       <workItem from="1472650179576" duration="559000" />
       <workItem from="1472651486616" duration="4382000" />
       <workItem from="1472717912755" duration="15000" />
-      <workItem from="1473153067662" duration="3401000" />
+      <workItem from="1473153067662" duration="3420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8357000" />
+    <option name="totallyTimeSpent" value="8376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="785" extended-state="0" />
@@ -1022,18 +1022,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding />
         </state>
       </provider>
