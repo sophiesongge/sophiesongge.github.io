@@ -46,11 +46,10 @@ github:   sophiesongge
 
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 sass:
 style: compressed
 gems:
 - jekyll-sitemap
-
 redcarpet:
     extensions: ["no_intra_emphasis"]
