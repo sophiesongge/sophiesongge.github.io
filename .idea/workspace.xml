@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/2016-09-06-bloom-filter.markdown">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="111">
-              <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+              <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -806,12 +806,12 @@
       <workItem from="1472650179576" duration="559000" />
       <workItem from="1472651486616" duration="4382000" />
       <workItem from="1472717912755" duration="15000" />
-      <workItem from="1473153067662" duration="7252000" />
+      <workItem from="1473153067662" duration="7324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12208000" />
+    <option name="totallyTimeSpent" value="12280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="785" extended-state="0" />
@@ -1052,7 +1052,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-09-06-bloom-filter.markdown">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
-          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+          <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
           <folding />
         </state>
       </provider>
