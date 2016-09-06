@@ -47,7 +47,7 @@ github:   sophiesongge
 
 # Build settings
 markdown: kramdown
-  kramdown:
+kramdown:
     input: GFM
 sass:
 style: compressed
