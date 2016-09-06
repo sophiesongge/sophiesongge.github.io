@@ -3,6 +3,7 @@ layout: post
 title:  "First Post!"
 date:   2016-08-31 15:42:55 +0200
 categories: jekyll update
+use_math: true
 ---
 
 This is my first post. My reviewer told me that the deviation of (A^x)
