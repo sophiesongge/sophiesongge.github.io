@@ -12,7 +12,3 @@ This is my first post. My reviewer told me that the deviation of $A^x$
 I would kindly remind my readers that the right answer should be: $A^x \\cdot lnA$.
 
 
-
-I would like to remind the deviation of A^x equals to A^x lnA, not xA^(x-1)!!!!!
-
-
