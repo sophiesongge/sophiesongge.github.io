@@ -47,9 +47,9 @@ github:   sophiesongge
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 sass:
 style: compressed
 gems:
 - jekyll-sitemap
-redcarpet:
-    extensions: ["no_intra_emphasis"]
