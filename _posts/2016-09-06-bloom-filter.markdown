@@ -3,6 +3,7 @@ layout: post
 title:  "Bloom Filter详解"
 date:   2016-09-06 11:42:55 +0200
 categories: big data
+use_math: true
 ---
 
 今天我们来讨论一个常用在大数据处理中的数据结构: 布隆过滤器 ([Bloom Filter])。布隆过滤器的主要用途是用来检索一个元素是不是在一个集合中。
