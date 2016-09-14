@@ -31,8 +31,7 @@ Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是�
 都伴随着k个hash functions。 往Bloom Filter插入元素的过程就是用每个hash function计算这个元素, 从而将结果所对应个比特位改为1。 如果当前比特位已经为1,
 则在插入的过程保持这一位不变。
 
-请看示例图:
-
+![请看Bloom Filter示例图:][Bloom]
 
 
 
@@ -41,3 +40,4 @@ Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是�
 
 
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
+[Bloom]: https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png "Bloom Filter"
