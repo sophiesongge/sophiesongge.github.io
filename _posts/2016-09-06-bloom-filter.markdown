@@ -44,4 +44,4 @@ Reference-style:
 
 
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
-[Bloom]: https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png "Bloom Filter"
+[Bloom]: https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png?raw=true "Bloom Filter"
