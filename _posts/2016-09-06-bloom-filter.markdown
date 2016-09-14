@@ -40,7 +40,7 @@ Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是�
 Reference-style: 
 ![alt text][logo]
 
-[logo]: https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png "Logo Title Text 2"
+[logo]: https://github.com/sophiesongge/sophiesongge.github.io/master/images/Bloom_Filter.png "Logo Title Text 2"
 
 
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
