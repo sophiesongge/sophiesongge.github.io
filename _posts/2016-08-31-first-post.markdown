@@ -13,4 +13,4 @@ This is my first post. My reviewer told me that the derivation of (A^x)
 I would kindly remind my readers that the right answer should be: $A^x \\cdot lnA$. =^-^=
 
 
-![Image](https://octodex.github.com/Kimonotocat)
+![Image](https://octodex.github.com/images/kimonotocat.png)
