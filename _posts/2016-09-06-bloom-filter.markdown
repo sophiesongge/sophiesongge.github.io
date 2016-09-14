@@ -29,7 +29,10 @@ Bloom Filter 简介
 这个时候, 如果面试官继续追问, 有没有时间和空间复杂度都更优的方法呢? 那么, 你就可以放心大胆的跟他说: yes, 有的, 它就是传说中的Bloom Filter。
 Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是一个bit vector。 这个bit vector的每一位初始的时候都被设为0。 同时, 每个Bloom Filter
 都伴随着k个hash functions。 往Bloom Filter插入元素的过程就是用每个hash function计算这个元素, 从而将结果所对应个比特位改为1。 如果当前比特位已经为1,
-则在插入的过程保持这一位不变。 
+则在插入的过程保持这一位不变。
+
+请看示例图:
+
 
 
 
