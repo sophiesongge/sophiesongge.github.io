@@ -32,16 +32,7 @@ Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是�
 则在插入的过程保持这一位不变。
 
 请看Bloom Filter示例图:
-![alt text][Bloom]
-
-
-
-
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://github.com/sophiesongge/sophiesongge.github.io/master/images/Bloom_Filter.png "Logo Title Text 2"
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png?raw=true)
 
 
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
-[Bloom]: https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png?raw=true "Bloom Filter"
