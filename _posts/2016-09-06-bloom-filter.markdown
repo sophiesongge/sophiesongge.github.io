@@ -34,5 +34,7 @@ Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是�
 请看Bloom Filter示例图:
 ![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png?raw=true)
 
+在这个示例中, 我们的Bloom Filter由一个30 bits的Bit Vector以及3各Hash Functions来构成。
+
 
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
