@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098adae-dcae-4c43-b4b4-702489c39e01" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-10-06-after-defence.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-10-06-after-defence.markdown" afterPath="$PROJECT_DIR$/_posts/2016-10-06-after-defence.markdown" />
     </list>
     <ignored path="sophiesongge.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,15 +31,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2016-10-06-after-defence.markdown" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-10-06-after-defence.markdown">
+      <file leaf-file-name="2016-09-06-bloom-filter.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-09-06-bloom-filter.markdown">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="120">
-                <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+              <first_editor relative-caret-position="293">
+                <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -47,15 +47,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-08-31-first-post.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown">
+      <file leaf-file-name="2016-10-06-after-defence.markdown" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-10-06-after-defence.markdown">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -795,12 +795,12 @@
       <workItem from="1473429882806" duration="554000" />
       <workItem from="1473772163561" duration="10000" />
       <workItem from="1473849719944" duration="1026000" />
-      <workItem from="1475772930109" duration="246000" />
+      <workItem from="1475772930109" duration="593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27532000" />
+    <option name="totallyTimeSpent" value="27879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="34" width="1383" height="785" extended-state="0" />
@@ -1276,8 +1276,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="263">
-            <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+          <first_editor relative-caret-position="293">
+            <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1295,8 +1295,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1309,8 +1309,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             <folding />
           </first_editor>
           <second_editor />
