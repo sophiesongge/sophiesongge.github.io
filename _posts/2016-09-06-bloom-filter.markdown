@@ -35,12 +35,22 @@ Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是�
 ![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png?raw=true)
 
 在这个示例中, 我们的Bloom Filter由一个30 bits的Bit Vector以及3个Hash Functions来构成。 我们将三个元素$S_1$, $S_2$和$S_3$分别插入这个Bloom Filter中。
-然后对另外三个新元素$S_1$, $S_x$和$S_y$进行查询。 由图所示, $?S_1$和$?S_x$将被认为属于这个Bloom Filter, 因为所以相应的bit位均为1, 而$?S_y$则被认为
-不属于这个Bloom Filter。 但是其中$?S_x$为一个false positive的答案, 因为在插入的时候我们并没有插入这个元素。
+然后对另外三个新元素$S_1$, $S_x$和$S_y$进行查询。 由图所示, $S_1$和$S_x$将被认为属于这个Bloom Filter, 因为所以相应的bit位均为1, 而$S_y$则被视为
+不属于这个Bloom Filter。 但是, 其中$S_x$为一个false positive的答案, 因为在插入的时候我们并没有插入这个元素。
 
 Bloom Filter 主要参数的计算
 =========================
 
+影响Bloom Filter的性能的参数主要有三个:
+
+* n : 需要插入Bloom Filter的最多的元素的个数
+* m : Bloom Filter中bit位的个数
+* p : Bloom Filter的False Positive rate
+
+其中需要插入Bloom Filter的最多元素的个数n我们是知道的, 或者至少是大致可以估算的。 所以构建一个Bloom Filter的时候, 主要需要设定bit位的个数, 从而来限制false positive rate
+的大小。 或者控制false positive rate的大小在一个固定值, 从而推算Bloom Filter的bit位的长度。
+
+在介绍Bloom Filter的参数计算之前, 我想先介绍一个概率理论中的经典呢模型, Balls into Bins模型。 这个模型在Computer Science领域有非常广泛的应用。 这个模型涉及n个球和m个盒子。
 
 
 
