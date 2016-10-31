@@ -7,7 +7,7 @@ use_math: true
 ---
 
 今天我们来讨论一个常用在大数据处理中的数据结构: 布隆过滤器 ([Bloom Filter])。布隆过滤器的主要用途是用来检索一个元素是不是在一个集合中。
-这是一个让人又爱又恨的数据结构。因为它占用很少的空间, 并提供常数时间的查询; 但同时, 它也有一些不可避免的缺点, 比如它有一定的误判率\\(false positive rate\\),
+这是一个让人又爱又恨的数据结构。因为它占用很少的空间, 并提供常数时间的查询; 但同时, 它也有一些不可避免的缺点, 比如它有一定的误判率(false positive rate),
 同时, 原始版本的Bloom Filter无法对元素进行删除操作。
 
  这篇文章主要讨论以下内容:
@@ -34,7 +34,9 @@ Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是�
 请看Bloom Filter示例图:
 ![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png?raw=true)
 
-在这个示例中, 我们的Bloom Filter由一个30 bits的Bit Vector以及3各Hash Functions来构成。
+在这个示例中, 我们的Bloom Filter由一个30 bits的Bit Vector以及3个Hash Functions来构成。 我们将三个元素$S_1$, $S_2$和$S_3$分别插入这个Bloom Filter中。
+
+
 
 
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
