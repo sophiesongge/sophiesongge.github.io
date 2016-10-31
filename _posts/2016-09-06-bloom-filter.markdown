@@ -7,7 +7,7 @@ use_math: true
 ---
 
 今天我们来讨论一个常用在大数据处理中的数据结构: 布隆过滤器 ([Bloom Filter])。布隆过滤器的主要用途是用来检索一个元素是不是在一个集合中。
-这是一个让人又爱又恨的数据结构。因为它占用很少的空间, 并提供常数时间的查询; 但同时, 它也有一些不可避免的缺点, 比如它有一定的误判率$\($false positive rate$\)$,
+这是一个让人又爱又恨的数据结构。因为它占用很少的空间, 并提供常数时间的查询; 但同时, 它也有一些不可避免的缺点, 比如它有一定的误判率$\($false positive rate$\)$;
 同时, 原始版本的Bloom Filter无法对元素进行删除操作。
 
  这篇文章主要讨论以下内容:
@@ -19,7 +19,7 @@ use_math: true
 Bloom Filter 简介
 =================
 
-在数据处理的过程中, 我们最常遇到的操作之一就是**membership查询**。 所谓的membership查询就是想判断一个元素, 是否存在于一个给定的集合里。 
+在数据处理的过程中, 我们最常遇到的操作之一就是**membership查询**。 所谓的membership查询就是想判断一个元素是否存在于一个给定的集合里。 
 最简单的做法是将集合数据存储在一个链表结构里, 然后每次查询的过程即为对链表的遍历过程。 当数据量变大时, 这种链表结构肯定是不够优化的, 因为每
 次查询的时间复杂度为$O\(n\)$。 面试的时候经常有follow up问题, 让提高查询效率, 这个时候往往树状结构就要登场了, 因为它们可以使查询的效率变
 为$O\(logn\)$。 当然树状结构还是可以被优化的, 就是用我们伟大的哈希方法, 比如Chain Hashing 和Bit Strings等, 或者就是简单的哈希表, 从而
@@ -28,13 +28,19 @@ Bloom Filter 简介
 
 这个时候, 如果面试官继续追问, 有没有时间和空间复杂度都更优的方法呢? 那么, 你就可以放心大胆的跟他说: yes, 有的, 它就是传说中的Bloom Filter。
 Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是一个bit vector。 这个bit vector的每一位初始的时候都被设为0。 同时, 每个Bloom Filter
-都伴随着k个hash functions。 往Bloom Filter插入元素的过程就是用每个hash function计算这个元素, 从而将结果所对应个比特位改为1。 如果当前比特位已经为1,
+都伴随着k个hash functions。 往Bloom Filter插入元素的过程就是用每个hash function计算这个元素, 从而将结果所对应的比特位改为1。 如果当前比特位已经为1,
 则在插入的过程保持这一位不变。
 
 请看Bloom Filter示例图:
 ![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Bloom_Filter.png?raw=true)
 
 在这个示例中, 我们的Bloom Filter由一个30 bits的Bit Vector以及3个Hash Functions来构成。 我们将三个元素$S_1$, $S_2$和$S_3$分别插入这个Bloom Filter中。
+然后对另外三个新元素$S_1$, $S_x$和$S_y$进行查询。 由图所示, $?S_1$和$?S_x$将被认为属于这个Bloom Filter, 因为所以相应的bit位均为1, 而$?S_y$则被认为
+不属于这个Bloom Filter。 但是其中$?S_x$为一个false positive的答案, 因为在插入的时候我们并没有插入这个元素。
+
+Bloom Filter 主要参数的计算
+=========================
+
 
 
 
