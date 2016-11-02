@@ -51,6 +51,9 @@ Bloom Filter 主要参数的计算
 的大小。 或者控制false positive rate的大小在一个固定值, 从而推算Bloom Filter的bit位的长度。
 
 在介绍Bloom Filter的参数计算之前, 我想先介绍一个概率理论中的经典呢模型, Balls into Bins模型。 这个模型在Computer Science领域有非常广泛的应用。 这个模型涉及n个球和m个盒子。
+每次, 将一个球投入其中一个盒子中。 将所有球都放在盒子中后, 我们观察每个盒子中球的数目。 我们将这个数目称为每个盒子的负载, 并且, 我们希望知道: 每个盒子的最大负载时多少。 Bloom
+ Filter的思想很大程度借鉴了Balls and Bins问题。 不同的是, 我们用多个hash functions将每个"球"扔了多次。 而false positive则是与每个"盒子"的负载相关。 下面我们将一步步介绍
+Bloom Filter中每个参数的计算方式。
 
 
 
