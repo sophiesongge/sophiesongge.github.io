@@ -56,7 +56,8 @@ Bloom Filter 主要参数的计算
 Bloom Filter中每个参数的计算方式。
 
 我们首先来看一个引理:
-**Lemma 1:**  用k个Hash Functions, 将n个元素插入到一个m bits的Bloom Filter中, 则这个Bloom Filter的任意一个bit位为0的概率将不会大于 e^(\frac{-k*n}{m})
+
+**Lemma 1:**  用k个Hash Functions, 将n个元素插入到一个m bits的Bloom Filter中, 则这个Bloom Filter的任意一个bit位为0的概率将不会大于 e^{\frac{-k*n}{m}}
 
 
 
