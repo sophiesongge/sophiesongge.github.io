@@ -33,3 +33,11 @@ mail.smtp.password=password
 
 这就是一个简单的.properties文件。 在这个文件中, "="左边的为key值, "="右边的为相应的value值。 在程序中, 我们就可以像操作哈希表一样, 通过key值来得到相应的value, 而进行配置的时候, 我们只需要更改相应的value值。
 
+Properties类的使用
+==============
+
+为了使用Properties类, 我们首先需要创建一个Properties对象。 Java提供了两个构造函数, 他们的本质是相同的, 我们一般都用默认的构建函数来创建:
+
+{% highlight java %}
+Properties props = new Properties();
+{% endhighlight %}
