@@ -31,7 +31,7 @@ mail.smtp.username=example@username.com
 mail.smtp.password=password
 {% endhighlight %}
 
-这就是一个简单的.properties文件。 在这个文件中, "="左边的为key值, "="右边的为相应的value值。 在程序中, 我们就可以像操作哈希表一样, 通过key值来得到相应的value, 而进行配置的时候, 我们只需要更改相应的value值。
+这就是一个简单的.properties文件。 在这个文件中, "="左边的为key值, key值用来作为我们写的程序中的变量; "="右边的为相应的value值, value值为我们根据实际情况的配置。 在程序中, 我们就可以像操作哈希表一样, 通过key值来得到相应的value, 而进行配置的时候, 我们只需要更改相应的value值。
 
 Properties类的使用
 ==============
@@ -41,3 +41,12 @@ Properties类的使用
 {% highlight java %}
 Properties props = new Properties();
 {% endhighlight %}
+
+Properties类提供了很多方法, 最常用的是getProperty, load, setProperty, store和clear方法。
+
+- getProperty(String key)用来得到key值相应的value
+- load(InputStream inStream)用来从输入流中读取属性列表
+- setProperties(String key, String value)用来设定相应的key-value对
+- store(OutputStream outStream, String comment)与load相反, 它用来将相应的属性列表存储到制定文件中
+- clear()清除所有装在过的key-value对
+
