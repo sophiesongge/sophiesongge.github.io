@@ -50,3 +50,69 @@ Properties类提供了很多方法, 最常用的是getProperty, load, setPropert
 - store$\($OutputStream outStream, String comment$\)$与load相反, 它用来将相应的属性列表存储到制定文件中
 - clear$\(\)$清除所有装在过的key-value对
 
+用例
+===
+我们将下面这段程序命名为EmailSender.java, 这段程序实现了本文一开始提到的发邮件的用例。 完整代码请点击[这里]: 
+
+{% highlight java %}
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+import java.util.Scanner;
+
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
+public class EmailSender{
+	final static String config = "config.properties";
+	
+	public static void sender() throws IOException{
+		InputStream in = new FileInputStream(config);
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please enter the destination email address: ");
+		String destination = scanner.nextLine();
+		
+		System.out.println("Please enter your subject: ");
+		String subject = scanner.nextLine();
+		
+		System.out.println("Please enter your content: ");
+		String content = scanner.nextLine();
+		
+		Properties props = new Properties();
+		props.load(in);
+		
+		Session session = Session.getInstance(props, new javax.mail.Authenticator(){
+			protected PasswordAuthentication getPasswordAuthentication(){
+				return new PasswordAuthentication(props.getProperty("mail.smtp.username"), props.getProperty("mail.smtp.password"));
+			}
+		});
+		
+		try{
+			Message message = new MimeMessage(session);
+			message.setFrom(new InternetAddress((String) props.get("mail.smtp.username")));
+			message.setRecipients(Message.RecipientType.TO, 
+					InternetAddress.parse(destination));
+			message.setSubject(subject);
+			message.setText(content);
+			
+			Transport.send(message);
+		}catch(MessagingException e){
+			throw new RuntimeException(e);
+		}
+	}
+	
+	public static void main(String[] args) throws IOException{
+		sender();
+	}
+}
+{% endlighlight %}
+
+[这里]: https://github.com/sophiesongge/EmailNotification/tree/master
