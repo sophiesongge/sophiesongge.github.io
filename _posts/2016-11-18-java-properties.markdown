@@ -113,6 +113,6 @@ public class EmailSender{
 		sender();
 	}
 }
-{% endlighlight %}
+{% endhighlight %}
 
 [这里]: https://github.com/sophiesongge/EmailNotification/tree/master
