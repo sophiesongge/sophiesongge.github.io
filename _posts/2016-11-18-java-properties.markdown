@@ -48,5 +48,5 @@ Properties类提供了很多方法, 最常用的是getProperty, load, setPropert
 - load$\($InputStream inStream$\)$用来从输入流中读取属性列表
 - setProperties$\($String key, String value$\)$用来设定相应的key-value对
 - store$\($OutputStream outStream, String comment$\)$与load相反, 它用来将相应的属性列表存储到制定文件中
-- clear\(\)清除所有装在过的key-value对
+- clear$\(\)$清除所有装在过的key-value对
 
