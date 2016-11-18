@@ -13,8 +13,8 @@ use_math: true
 在我们写程序的时候, 有些参数是需要经常改变的。而这些改变是不可预知的。 如: 我写了一段程序用来给指定的邮箱发邮件。 但是这个邮件由哪个邮箱发出, 这个邮箱的smtp服务器是什么, 它的密码是神马????等等一些列参数我希望通过用户来进行配置。
 为了保证模块的通用性, 这些信息是不能写死在程序里面的。 通常的做法是通过配置文件来解决。 不同的语言支持的配置文件类型是不同的, 如:
 
-* Python ---- .ini
-* Java   ---- .properties
+* Python --- .ini
+* Java   --- .properties
 
 于是乎, 我们今天的主角登场了。 JDK内置的java.util.Properties类为我们操作.properties文件提供了便利。这个类继承自HashTable, 所以, 不可避免的, Properties类其实就是一个哈希表。 
 
@@ -22,12 +22,11 @@ use_math: true
 ====================
 上文提到, Properties类其实是一个哈希表, 所以.properties文件不可避免的是<key, value>对的形式。 让我们看一个例子, 我们将以下这段代码存储在一个名为config.properties文件中:
 
-[source, xml]
-----
+{% highlight xml %}
 mail.smtp.starttls.enable=true
 mail.smtp.port=587
 mail.smtp.auth=true
 mail.smtp.host=smtp.gmail.com
 mail.smtp.username=example@username.com
 mail.smtp.password=password
-----
+{% endhighlight %}
