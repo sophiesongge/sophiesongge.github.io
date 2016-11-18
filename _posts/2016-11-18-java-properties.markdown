@@ -30,3 +30,6 @@ mail.smtp.host=smtp.gmail.com
 mail.smtp.username=example@username.com
 mail.smtp.password=password
 {% endhighlight %}
+
+这就是一个简单的.properties文件。 在这个文件中, "="左边的为key值, "="右边的为相应的value值。 在程序中, 我们就可以像操作哈希表一样, 通过key值来得到相应的value, 而进行配置的时候, 我们只需要更改相应的value值。
+
