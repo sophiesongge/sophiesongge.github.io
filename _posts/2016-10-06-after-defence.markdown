@@ -2,7 +2,7 @@
 layout: post
 title:  "博士答辩之后"
 date:   2016-10-06 18:58:55 +0200
-categories: jekyll update
+categories: life
 use_math: false
 ---
 
