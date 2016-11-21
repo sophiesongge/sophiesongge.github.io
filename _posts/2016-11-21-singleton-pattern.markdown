@@ -3,7 +3,7 @@ layout: post
 title:  "Design Pattern 之 Singleton (单例模式)"
 date:   2016-11-18 15:00:00 +0200
 categories: design pattern
-use_math: true
+use_math: false
 ---
 Singleton是最简单也最常用的设计模式之一。 它的用途非常广泛, 思想也非常简单, 但是并不是每个程序员都能正确的写好一个单例模式。 今天就让我们来讨论一下Singleton。
 
