@@ -3,7 +3,7 @@ layout: post
 title:  "初识Java Properties"
 date:   2016-11-18 15:00:00 +0200
 categories: learn java
-use_math: true
+use_math: false
 ---
 同学们好, 今天我们要讨论的话题是Java Properties。
 
@@ -44,11 +44,11 @@ Properties props = new Properties();
 
 Properties类提供了很多方法, 最常用的是getProperty, load, setProperty, store和clear方法。
 
-- getProperty$\($String key$\)$用来得到key值相应的value
-- load$\($InputStream inStream$\)$用来从输入流中读取属性列表
-- setProperties$\($String key, String value$\)$用来设定相应的key-value对
-- store$\($OutputStream outStream, String comment$\)$与load相反, 它用来将相应的属性列表存储到制定文件中
-- clear$\(\)$清除所有装在过的key-value对
+- getProperty(String key)用来得到key值相应的value
+- load(InputStream inStream)用来从输入流中读取属性列表
+- setProperties(String key, String value)用来设定相应的key-value对
+- store(OutputStream outStream, String comment)与load相反, 它用来将相应的属性列表存储到制定文件中
+- clear()清除所有装在过的key-value对
 
 用例
 ===
