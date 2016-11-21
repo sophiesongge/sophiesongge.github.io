@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098adae-dcae-4c43-b4b4-702489c39e01" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="sophiesongge.github.io.iws" />
@@ -34,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="133" selection-start-line="19" selection-start-column="133" selection-end-line="19" selection-end-column="133" />
+              <caret line="19" column="125" selection-start-line="19" selection-start-column="125" selection-end-line="19" selection-end-column="125" />
               <folding>
                 <element signature="n#style#0;n#p#10;n#article#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -814,12 +815,12 @@
       <workItem from="1478172309811" duration="4000" />
       <workItem from="1479140046943" duration="2008000" />
       <workItem from="1479471991611" duration="4576000" />
-      <workItem from="1479725484047" duration="7047000" />
+      <workItem from="1479725484047" duration="7091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47371000" />
+    <option name="totallyTimeSpent" value="47415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1361,7 +1362,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="133" selection-start-line="19" selection-start-column="133" selection-end-line="19" selection-end-column="133" />
+          <caret line="19" column="125" selection-start-line="19" selection-start-column="125" selection-end-line="19" selection-end-column="125" />
           <folding>
             <element signature="n#style#0;n#p#10;n#article#0;n#div#0;n#!!top" expanded="true" />
           </folding>
