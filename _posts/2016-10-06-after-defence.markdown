@@ -3,7 +3,7 @@ layout: post
 title:  "博士答辩之后"
 date:   2016-10-06 18:58:55 +0200
 categories: jekyll update
-use_math: true
+use_math: false
 ---
 
 时间过得可真快, 一转眼答辩结束已经一个星期了。 其实何止这个星期过得快, 一转眼, 三年半都过去了。 这三年多的时间发生了太多的事情, 又一个人生中美好的时光就这么贡献给科学事业了。
