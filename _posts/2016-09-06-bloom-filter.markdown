@@ -59,7 +59,7 @@ Bloom Filter中每个参数的计算方式。
 
 **Lemma 1:**  用k个Hash Functions, 将n个元素插入到一个m bits的Bloom Filter中, 则这个Bloom Filter的任意一个bit位为0的概率将不会大于 $e^ {\frac{-k*n}{m}}$
 
-
+这个Lemma计算Bloom Filter中任意一个bit位为0的概率, 计算的思路与计算balls into bins模型中任意一个盒子为空的概率类似。
 
 
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
