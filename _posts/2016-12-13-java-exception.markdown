@@ -25,7 +25,7 @@ Exception的结构
 
 说到Java Exception的结构, 就要从一个古老的父类Throwable来说起。 从名字来理解, 这个词表示"可抛出"的。 Java中左右的Error和Exception都继承自这个类。
 
-Exception又分为两类, 一类叫RuntimeException, 另一类是非RuntimeException -_-b 
+Exception又分为两类, 一类叫RuntimeException, 另一类是非RuntimeException。 -_-b 
 
 RuntimeException翻译为中文是"运行时异常", 即这类异常不会在编译的时候被检测, 而是在程序运行的时候才会被处理, 一般像除数为零(ArrithmeticException), 零指针(NullPointerException),
 数组索引越界(ArrayIndexOutofBoundsException)等都属于这一类异常。 由于这类异常不是程序逻辑的异常, 而一般都是没有考虑全边界条件引起的, 所以Java并不强制程序去处理这类异常。 所以我们的
