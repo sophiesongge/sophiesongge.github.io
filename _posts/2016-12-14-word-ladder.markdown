@@ -91,7 +91,7 @@ public ArrayList<String> getAdjacent(String word, Set<String> dictionary){
             dot -----/       log
                \             / \  
                 \           /   \
-                 ----- dog -    cog
+                 ----- dog ---- cog
                  
 
 如此图就构建完了。 如果这时候我给你出另外一道题: 找到这个图上从hit到cog的最短路。 那么你一定会不假思索的跟我说: 太简单了, 这就是图的广搜嘛。 恭喜你答对了。
@@ -124,7 +124,7 @@ public int WordLadder(String start, String end, Set<String> dict){
         for(int i=0; i<size; i++){
             //将最上面的节点吐出来
             String top = q.poll();
-            for(String adj : getAdjacent(top)){
+            for(String adj : getAdjacent(top, dict)){
                 //不做无用功
                 if(visited.contains(adj)){
                     continue;
@@ -149,7 +149,7 @@ public int WordLadder(String start, String end, Set<String> dict){
 
 ![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Word_Ladder_II.png?raw=true)
 
-如果我们希望把最短的转换序列输出需要怎么办? 这回返回值不再是一个int, 而是一个List<List<String>>, 也就是说instead of回答5, 我们希望得到下面这样的答案:
+如果我们希望把最短的转换序列输出需要怎么办? 这回返回值不再是一个int, 而是一个List\<List\<String\>\>, 也就是说instead of回答5, 我们希望得到下面这样的答案:
 
 \[
 
@@ -166,12 +166,66 @@ public int WordLadder(String start, String end, Set<String> dict){
 * [Permutations]
 * [Subsets]
 
+每次temps被加入到result中的条件是, temps的长度与前一道题目中返回的最短路径的长度相等。 所以, 我们其实需要准备两样东西, 第一、要搜索的图需要被提前构件好; 第二、最短路的长度需要求出。 我们可以在上一题的广搜中加入两个HashMap,
+分别用来存储相应的adjacent list和distance。代码只做稍微改动即可:
+
+
 {% highlight java %}
-public void backtracing(List<List<String>> res, List<String> temps, String start, String end, Set<String> dict){
-    
-    
-}
+	public void wordLadderHelper(String start, String end, Set<String> dict, Map<String, ArrayList<String>> graph, Map<String, Integer> distance){
+		Queue<String> q = new LinkedList<String>();
+		q.add(start);
+		distance.put(start, 0);
+		
+		for(String s : dict){
+			graph.put(s, new ArrayList<String>());
+		}
+		
+		while(!q.isEmpty()){
+			String current = q.poll();
+			ArrayList<String> adjList = getAdjacent(current, dict);
+			
+			for(String adj : adjList){
+				graph.get(adj).add(current);
+				if(!distance.containsKey(adj)){
+					distance.put(adj, distance.get(current)+1);
+					q.add(adj);
+				}
+			}
+			
+		}
+	}
 {% endhighlight %}
+
+
+回溯部分的代码如下:
+
+{% highlight java %}
+	
+	public void backtracing(List<List<String>> result, List<String> temps, String start, String current, 
+			Map<String, Integer> distance, Map<String, ArrayList<String>> graph){
+		
+		temps.add(current);
+		
+		if(current.equals(start)){
+			Collections.reverse(temps);
+			result.add(new ArrayList<String>(temps));
+			Collections.reverse(temps);
+		}else{
+			for(String adj : graph.get(current)){
+				if(distance.containsKey(adj) && distance.get(current) == distance.get(adj)+1){
+					backtracing(result, temps, start, adj, distance, graph);
+				}
+			}
+		}
+
+		temps.remove(temps.size() - 1);
+	}
+{% endhighlight %}
+
+完整代码请[点击这里可以下载]。
+
+如果您觉得本文有用, 请扫描一下二维码, 随意打赏 =^-^=
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/dashang.JPG?raw=true)
 
 
 [点击这里]: http://www.lintcode.com/zh-cn/problem/word-ladder/
@@ -180,3 +234,4 @@ public void backtracing(List<List<String>> res, List<String> temps, String start
 [Combinations]: http://www.lintcode.com/zh-cn/problem/combinations/
 [Permutations]: http://www.lintcode.com/zh-cn/problem/permutations/
 [Subsets]: http://www.lintcode.com/zh-cn/problem/subsets/
+[点击这里可以下载]:  https://github.com/sophiesongge/LeetCode/blob/master/src/WordLadderII.java
