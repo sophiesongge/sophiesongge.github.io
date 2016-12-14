@@ -30,7 +30,7 @@ dict = \["hot","dot","dog","lot","log"\]
 * 图的搜索
 
 **图的搜索**无非就是**深度优先**和**广度优先**。 在这里我墙裂建议大家打好基本功, 把深搜和广搜以及各种变种包括图的拓扑排序等等写熟练, 然后找一个你最喜欢最记得住的方式写成模板, 
-因为它们都可以无限复用同一个模板。 不要在这里浪费时间。<font color="red">关于图的搜索部分我们不再赘述, 如果你不会写深搜和广搜那么请你不要继续往下看了, 返回去练好基本功先。<font> 
+因为我们以后可以无限复用同一个模板。 不要在这里浪费时间。<font color="red">关于图的搜索部分我们不再赘述, 如果你不会写深搜和广搜那么请你不要继续往下看了, 返回去练好基本功先。<font> 
 
 往往**图的构建**才是题目的难点。
 
@@ -48,7 +48,7 @@ dict = \["hot","dot","dog","lot","log"\]
 
  接下来我们还能做什么呢? 好像可以帮hit找到它的邻居们。 嗯, 没错! hit的邻居将是和hit相差一个字母, 并且在dictionary中的词。太容易了, 是不是~~~! 先让我们写两个辅助的methods来实现我们要做的事情。
  
- 首先, 第一个method让我们来写找到跟hit差一个字母的词。我们将这个方法称作replace, 它的作用是, 将一个单词的指定一位替换成一个字母。
+ 首先, 第一个method让我们来写找到跟hit差一个字母的词。我们将这个方法称作replace, 它的作用是, 将一个单词的指定一位替换成另一个字母。
  
  {% highlight java %}
 public String replace(String word, index i, char c){
@@ -94,7 +94,7 @@ public ArrayList<String> getAdjacent(String word, Set<String> dictionary){
                  ----- dog -    cog
                  
 
-如此图就构建完了。 如果这时候我给你出另外一道题, 就是找到这个图上从hit到cog的最短路。 那么你一定会不假思索的跟我说: 太简单了, 这就是图的广搜嘛。 恭喜你答对了。
+如此图就构建完了。 如果这时候我给你出另外一道题: 找到这个图上从hit到cog的最短路。 那么你一定会不假思索的跟我说: 太简单了, 这就是图的广搜嘛。 恭喜你答对了。
 广度优先的方法有很多, 我个人比较喜欢用queue来每次吞吐的方式(同样的, 深搜我喜欢用stack来吞吐的方式)。 但是这些都是凭个人喜好的。 下面我们就来将这段代码完成:
 
 {% highlight java %}
@@ -143,9 +143,11 @@ public int WordLadder(String start, String end, Set<String> dict){
 }
 {% endhighlight %}
                
+完整代码请[参考这里]。
 
+你以为这道题到这里就完结了嘛??真是too young too naive! 这道题还有follow up的: ([题目出处]你懂的)
 
-
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Word_Ladder_II.png?raw=true)
 
 
 
@@ -153,3 +155,5 @@ public int WordLadder(String start, String end, Set<String> dict){
 
 
 [点击这里]: http://www.lintcode.com/zh-cn/problem/word-ladder/
+[参考这里]: https://github.com/sophiesongge/LeetCode/blob/master/src/WordLadderI.java
+[题目出处]: http://www.lintcode.com/zh-cn/problem/word-ladder-ii/
