@@ -160,7 +160,7 @@ public int WordLadder(String start, String end, Set<String> dict){
   \]
   
 
-看到List<List<String>>这种形式的return, 直觉告诉我们应该是用backtracing没跑了! 恭喜你, 直觉又一次拯救了你。<font color="red">如果你不知道什么是回溯, 请先回去练这三道题: <font>
+看到List\<List\<String\>\>这种形式的return, 直觉告诉我们应该是用backtracing没跑了! 恭喜你, 直觉又一次拯救了你。<font color="red">如果你不知道什么是回溯, 请先回去练这三道题: <font>
 
 * [Combinations]
 * [Permutations]
