@@ -226,6 +226,9 @@ public int WordLadder(String start, String end, Set<String> dict){
 
 如果您觉得本文有用, 请扫描一下二维码, 随意打赏 =^-^=
 
+```
+echo $HOME
+
 ![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/dashang.JPG?raw=true=10x10)
 
 
