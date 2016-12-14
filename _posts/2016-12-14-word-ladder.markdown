@@ -34,14 +34,68 @@ dict = $\[$"hot","dot","dog","lot","log"$\]$
 
 往往**图的构建**才是题目的难点。
 
-我在遇到一个比较难的问题的时候往往喜欢把问题分解成小问题, 然后再各个击破。 拿图的构建举例, 如果用一个HashMap来表示图上的节点, 我们无非需要确定两件事情, (1)key是什么, (2)value是什么(->_->废话)。
+我在遇到一个比较难的问题的时候往往喜欢把问题分解成小问题, 然后再各个击破。 拿图的构建举例, 如果用一个HashMap来表示图上的节点, 我们无非需要确定两件事情, (1)key是什么, (2)value是什么(<-_<-废话)。
  key一般就是当前节点的值, 既它在图中的显示部分, 在这道题中, 很明显它将是每个单词, 因为我们是将每个单词连接在一起构成的图。 而value的部分则是这个节点的adjacent nodes, 说白了就是它和谁连在一起。神奇吧,
  如此一来, 我们就用一个抽象的数据结构, 把一个具体的图表示出来了。
  
  那么问题来了, 如何确定key和value的值??? key是图上的节点, 但是在最开始, 我们还真无法确定这个图上的节点都有哪些。 我们唯一确定的是start和end这两个词肯定在图上, 因为我们的目的是在这个图上从start走到end。
+ 那好吧, 先把start和end画在图上。
  
+            hit--
+                 \
+                 /
+                cog
+
+ 接下来我们还能做什么呢? 好像可以帮hit找到它的邻居们。 嗯, 没错! hit的邻居将是和hit相差一个字母, 并且在dictionary中的词。太容易了, 是不是~~~! 先让我们写两个辅助的methods来实现我们要做的事情。
+ 
+ 首先, 第一个method让我们来写找到跟hit差一个字母的词。我们将这个方法称作replace, 它的作用是, 将一个单词的指定一位替换成一个字母。
+ 
+ {% highlight java %}
+public String replace(String word, index i, char c){
+    char[] wordArray = word.toCharArray();
+    wordArray[i] = c;
+    return new String(wordArray);
+}
+ {% endhighlight %}
+
+接下来, 让我们来写一个method, 为hit找到它的adjacent。 我们将这个方法称作getAdjacent, 它的作用是, 为每一个单词找到它的相邻单词。这一步有多种实现方法, 
+我用的方法是将单词的每一位从a换到z, 如果换过的单词在dictionary中, 我就认为这个单词是原单词的邻居。
+{% highlight java %}
+public ArrayList<String> getAdjacent(String word, Set<String> dictionary){
+    ArrayList<String> adjacent = new ArrayList();
+    for(char letter = 'a'; letter <= 'z'; letter++){
+        for(int i=0; i<word.length(); i++){
+            if(!word.charAt(i) == letter){
+                if(dictionary.contains(replace(word, i, letter))){
+                    adjacent.add(replace(word, i, letter));
+                }
+            }
+        }
+    }
+    return adjacent;
+}
+{% endhighlight %}
+
+通过这个方法, 我们给hit找到了邻居{hot}。
+
+        hit --
+              \
+               \
+               hot-- ... -- cog
+               
+那为了构建这个图, 下一步我们当然是为hit的每一个邻居找到它们的邻居们, 以此类推, 知道end出现在为止。 图构建如下:
+
+        hit -- hot -- lot---
+               /       /    \
+              /       /      \
+            dot -----/       log
+               \             / \  
+                \           /   \
+                 ----- dog -    cog
+                 
 
 
+               
 
 
 
