@@ -83,7 +83,7 @@ public ArrayList<String> getAdjacent(String word, Set<String> dictionary){
                \
                hot-- ... -- cog
                
-那为了构建这个图, 下一步我们当然是为hit的每一个邻居找到它们的邻居们, 以此类推, 知道end出现在为止。 图构建如下:
+那为了构建这个图, 下一步我们当然是为hit的每一个邻居找到它们的邻居们, 以此类推, 直到end出现在为止。 图构建如下:
 
         hit -- hot -- lot---
                /       /    \
@@ -94,7 +94,54 @@ public ArrayList<String> getAdjacent(String word, Set<String> dictionary){
                  ----- dog -    cog
                  
 
+如此图就构建完了。 如果这时候我给你出另外一道题, 就是找到这个图上从hit到cog的最短路。 那么你一定会不假思索的跟我说: 太简单了, 这就是图的广搜嘛。 恭喜你答对了。
+广度优先的方法有很多, 我个人比较喜欢用queue来每次吞吐的方式(同样的, 深搜我喜欢用stack来吞吐的方式)。 但是这些都是凭个人喜好的。 下面我们就来将这段代码完成:
 
+{% highlight java %}
+public int WordLadder(String start, String end, Set<String> dict){
+    if(dict == null){
+        return 0;
+    }
+    if(start.equals(end)){
+        return 1;
+    }
+    //将start和end添加到dict中, 将dict补充完整
+    dict.add(start);
+    dict.add(end);
+    //用来做吞吐
+    Queue<String> q = new LinkedList();
+    //用来记录已经找过邻居的节点, 不想对他们进行重复计算
+    Queue<String> visited = new LinkedList();
+    q.add(start);
+    visited.add(start);    
+    //用来记录最短路的长度
+    int length = 1;    
+    //吞吐吧, word哥!
+    while(!q.isEmpty()){
+        length++;
+        //这里要记录q的size, 它的size可以理解为这一层的节点的数目
+        int size = q.size();
+        for(int i=0; i<size; i++){
+            //将最上面的节点吐出来
+            String top = q.poll();
+            for(String adj : getAdjacent(top)){
+                //不做无用功
+                if(visited.contains(adj)){
+                    continue;
+                }else if(adj.equals(end)){
+                    return length;
+                }else{
+                    //将邻居吞进去
+                    q.add(adj);
+                    visited.add(adj);
+                }
+            }
+        }
+    }
+    //没找着
+    return 0;
+}
+{% endhighlight %}
                
 
 
