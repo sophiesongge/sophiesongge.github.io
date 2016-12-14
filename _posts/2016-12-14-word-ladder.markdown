@@ -12,7 +12,18 @@ use_math: false
 
 ![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Word_Ladder_I.png?raw=true)
 
+*样例*
+给出数据如下：
 
+start = "hit"
+
+end = "cog"
+
+dict = $\[$"hot","dot","dog","lot","log"$\]$
+
+一个最短的变换序列是 "hit" -> "hot" -> "dot" -> "dog" -> "cog"，
+
+返回它的长度 5
 
 
 
