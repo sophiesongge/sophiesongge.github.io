@@ -16,7 +16,7 @@ use_math: false
 
 给出数据如下： start = "hit" end = "cog"
 
-dict = $\[$"hot","dot","dog","lot","log"$\]$
+dict = \["hot","dot","dog","lot","log"\]
 
 一个最短的变换序列是 "hit" -> "hot" -> "dot" -> "dog" -> "cog"
 
