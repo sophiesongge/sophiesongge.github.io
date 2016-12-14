@@ -226,8 +226,7 @@ public int WordLadder(String start, String end, Set<String> dict){
 
 如果您觉得本文有用, 请扫描一下二维码, 随意打赏 =^-^=
 
-<img src="https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/dashang.JPG?raw=true" width="10" height="160" alt="打赏"/>
-
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/dashang.JPG?raw=true=10x10)
 
 
 [点击这里]: http://www.lintcode.com/zh-cn/problem/word-ladder/
