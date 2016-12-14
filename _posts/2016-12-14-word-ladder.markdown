@@ -149,11 +149,34 @@ public int WordLadder(String start, String end, Set<String> dict){
 
 ![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/Word_Ladder_II.png?raw=true)
 
+如果我们希望把最短的转换序列输出需要怎么办? 这回返回值不再是一个int, 而是一个List<List<String>>, 也就是说instead of回答5, 我们希望得到下面这样的答案:
 
+\[
 
+    ["hit","hot","dot","dog","cog"],
 
+    ["hit","hot","lot","log","cog"]
+
+  \]
+  
+
+看到List<List<String>>这种形式的return, 直觉告诉我们应该是用backtracing没跑了! 恭喜你, 直觉又一次拯救了你。<font color="red">如果你不知道什么是回溯, 请先回去练这三道题: <font>
+
+* [Combinations]
+* [Permutations]
+* [Subsets]
+
+{% highlight java %}
+public void backtracing(List<List<String>> res, List<String> temps, String start, String end, Set<String> dict){
+    
+    
+}
+{% endhighlight %}
 
 
 [点击这里]: http://www.lintcode.com/zh-cn/problem/word-ladder/
 [参考这里]: https://github.com/sophiesongge/LeetCode/blob/master/src/WordLadderI.java
 [题目出处]: http://www.lintcode.com/zh-cn/problem/word-ladder-ii/
+[Combinations]: http://www.lintcode.com/zh-cn/problem/combinations/
+[Permutations]: http://www.lintcode.com/zh-cn/problem/permutations/
+[Subsets]: http://www.lintcode.com/zh-cn/problem/subsets/
