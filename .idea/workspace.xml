@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0098adae-dcae-4c43-b4b4-702489c39e01" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-12-14-word-ladder.markdown" afterPath="$PROJECT_DIR$/_posts/2016-12-14-word-ladder.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-12-13-java-exception.markdown" afterPath="$PROJECT_DIR$/_posts/2016-12-13-java-exception.markdown" />
     </list>
     <ignored path="sophiesongge.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,31 +47,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-12-13-java-exception.markdown" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2016-12-13-java-exception.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2016-12-13-java-exception.markdown">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="900">
-                <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="68" selection-end-column="18" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-12-14-word-ladder.markdown" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-12-14-word-ladder.markdown">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="221">
-                <caret line="226" column="31" selection-start-line="226" selection-start-column="31" selection-end-line="226" selection-end-column="31" />
+              <first_editor relative-caret-position="371">
+                <caret line="108" column="16" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -290,8 +274,8 @@
         <option value="$PROJECT_DIR$/_posts/2016-08-31-first-post.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-08-31-welcome-to-jekyll.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-09-06-bloom-filter.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2016-12-13-java-exception.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-12-14-word-ladder.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2016-12-13-java-exception.markdown" />
       </list>
     </option>
   </component>
@@ -836,12 +820,12 @@
       <workItem from="1480082603768" duration="274000" />
       <workItem from="1481639057729" duration="12734000" />
       <workItem from="1481727386059" duration="1755000" />
-      <workItem from="1481736511719" duration="179000" />
+      <workItem from="1481736511719" duration="1855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63272000" />
+    <option name="totallyTimeSpent" value="64948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1333,20 +1317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-12-13-java-exception.markdown">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="900">
-            <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="68" selection-end-column="18" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="771">
@@ -1361,8 +1331,22 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="221">
-            <caret line="226" column="31" selection-start-line="226" selection-start-column="31" selection-end-line="226" selection-end-column="31" />
+          <first_editor relative-caret-position="146">
+            <caret line="201" column="20" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="20" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-12-13-java-exception.markdown">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="371">
+            <caret line="108" column="16" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
             <folding />
           </first_editor>
           <second_editor />

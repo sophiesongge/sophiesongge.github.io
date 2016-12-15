@@ -72,5 +72,44 @@ try{
 系统会自动生成一个异常对象, 这个对象被提交给JVM, 这个过程就是"抛出"的过程。 当JVM接收到异常对象时, 会寻找能处理该异常对象的相应catch block, 如果找到, 则把该异常对象交给
 这个catch block进行处理, 这个过程就是异常的捕获过程。 --- 当然如果JVM找不到相应的catch block, 则运行环境终止, 程序退出。
 
+Catch Block的执行顺序
+================
+既然我们可以捕获多个异常, 那自然就涉及到捕获的顺序。 请问下面这段代码能通过编译嘛:
 
+{% highlight java %}
+try {  
+            //Do something  
+        } catch (Exception e) {  
+              
+        } catch (IOException e) {  
+              
+        }  
+{% endhighlight %}
 
+答案是: 不能。 因为, catch block是按顺序执行的, 并且java一旦捕获了一个异常, 就会忽略后面所有的异常。 由于IOException是Exception的子类, 所以IOException将永远不会被捕获。 所以在
+我们自己写代码捕获异常的时候, 一定要注意多个异常捕获的顺序。
+
+finally
+=======
+
+关于finally, 我们最熟悉的就是这个block无论如何都会被执行到, 即便try或者catch中有return, continue, break等, finally仍然会被执行。 当然, 如果你将JVM终止掉, 那自然finally也不会被执行, 
+所以如果你在try或catch中写了System.exit(0), 那么算你狠, finally不会被执行。
+
+另外一个需要提的是, 为什么要写finally块, 当然你可以说, 为了保证有一部分永远被执行到。 但其实finally的作用远远不止这些。 
+
+故事还得从头说起。 大家都知道java的垃圾回收机制是自动进行回收的, 这样极大程度的方便了程序员。 问题是java的垃圾回收机制不会回收任何物理资源, 它只会回收堆内存中的对象所占用的内存。那么如果我们试图
+在try中打开一些物理资源, ---比如连接了数据库, 打开了磁盘中的文件, 网络连接等, 这些资源是不会被java自动回收的, 需要我们手动进行处理。 而这些物理资源的回收一般会被放到finally中。 因为, 如果try
+中的某一语句引起了异常, 则位于这个语句后面的回收资源语句将不会被执行到; 如果将回收放到catch中, 则很大程度它不会被执行, 因为我们suppose正常情况下程序是不会有异常的。 所以为了保证资源回收被顺利执行, 
+最佳的做法是将其放到finally中。
+
+还有一点需要注意的是, 一般不会在finally中使用return或者throw等会导致方法终止的语句。 因为, 一旦使用了这样的语句, 会导致try, catch中的return、throw语句失效。 举个简单的栗子:
+
+{% highlight java %}
+try{
+    return true;
+}finally{
+    return false;
+}
+{% endhighlight %}
+
+这段代码永远都会return false。
