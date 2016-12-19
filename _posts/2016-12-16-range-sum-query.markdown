@@ -52,7 +52,17 @@ Let's have a look at an example:
 
 For example:
 
-34的二进制表示为: 100010。 最后一位1为表黑体的部分: 1000**1**0
+34的二进制表示为: 100010。 最后一位1为表黑体的部分: 1000**1**0。
+
+让我们写一个方法叫做lowestBit, 用来返回最后一位1的位置:
+
+{% highlight java %}
+
+private int lowestBit(int i){
+    return (!i + 1)&i;
+}
+
+{% endhighlight %}
 
 
 
