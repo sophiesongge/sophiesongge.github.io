@@ -125,7 +125,7 @@ public int getRangeSum(int i, int j){
     return getSum(j) - getSum(i);
 }
 
-{% endhighlisght %}
+{% endhighlight %}
 
 
 完整代码请[参考这里]。
