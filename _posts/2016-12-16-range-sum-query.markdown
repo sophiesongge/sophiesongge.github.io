@@ -34,7 +34,8 @@ Let's have a look at an example:
 
 在这个图中a\[\]为原始数据, e\[\]为树状数组。 
 
-在图中我们可以发现一个有趣的规律, --- 其实我没发现 -_-b。 就是如果一个数m的二进制的表达中末尾有n个连续的0, 则e\[m\]为a中从a\[m\]起往前算2^n个连续的数相加。
+在图中我们可以发现一个有趣的规律, --- 其实我没发现 -_-b。 就是如果一个数m的二进制的表达中末尾有n个连续的0, 则e\[m\]为a中从a\[m\]起往前算2^n个连续的数相加, 而末尾的0的个数没有那么好求, 但是
+这个问题可以转化为第一个1所在的位数, 问题将会变得好求很多。
 
 比如:
 
@@ -46,7 +47,7 @@ Let's have a look at an example:
 为了更好的理解这个算法, 我们来介绍两个概念:
 
 * 后继节点: $\($可理解为父节点$\)$ 一个节点的后继节点是离它最近的, 比它大的, 末尾的0比它多的那个节点。 以图中的节点为例, 2的后继节点是4, 5的后继节点是6。 --- 用来计算e数组, 将当前计算出来的e\[i\]添加到他们的后继中 
-* 前驱节点: $\($可理解为子节点$\)$ 一个节点的前驱节点是离它最近的, 比它小的, 末尾的0比它多的那个节点。 以图中的节点为例, 7的前驱节点是6, 6的前驱节点是4。 --- 便面计算连续和的时候进行重复计算
+* 前驱节点: $\($可理解为子节点$\)$ 一个节点的前驱节点是离它最近的, 比它小的, 末尾的0比它多的那个节点。 以图中的节点为例, 7的前驱节点是6, 6的前驱节点是4。 --- 避免计算连续和的时候进行重复计算
 
 为了计算前驱节点和后继节点, 我们需要首先找到一个数X的二进制表示中, 最后一位1在什么位置。 所谓的最后一位1, 是从2^0位开始往前数, 第一个遇到的1, 也就是2^1上的1。 这个1的位置的求法是: ((NOT X)+1) AND X。
 
@@ -72,7 +73,59 @@ e\[X\] 的后继节点为: e\[X + lowestBit$\($X$\)$\]
 
 e\[i\] = $\sum_{j = i - lowestBit(i) + 1}^{i} a\[j\]$
 
+写到这里, 让我们写另外一个method来计算初始的e数组。
 
+{% highlight java %}
+
+private int[] createBIT(int[] nums){
+    int[] BIT = new int[nums.length];
+    
+    for(int i=1; i<=nums.length; i++){
+        BIT[i] = nums[i];
+        
+        for(int j= i - lowestBit(i) +1 ; j <i; j++){
+            BIT[i] = BIT[i] + nums[j];
+        }
+    }
+}
+
+{% endhighlight %}
+
+如果对a数组的第j位进行了update, 那就意味着e数组中利用了这一位的所有位都需要相应进行update。 而利用了它的节点为它的后继节点, 而每个节点的后继节点为j = j + lowestBit(j), 如此向后递归:
+
+{% highlight java %}
+
+public void update(int i, int val){
+    for(int j=i; j<= nums.length; j = j + lowestBit(j)){
+        BIT[j] = BIT[j] + val;
+    }
+}
+
+{% endhighlight %}
+
+而求和的运算也变得相应的容易了, 因为sum\[X\] 为X的前驱节点的和, 如此向前递归
+
+{% highlight java %}
+
+public int getSum(int i){
+    int sum = 0;
+    for(int j = i; j > 0; j = j - lowestBit(j)){
+       sum += BIT(j); 
+    }
+    return sum;
+}
+
+{% endhighlight %}
+
+这样就可以像第一道题那样来计算range sum了:
+
+{% highlight java %}
+
+public int getRangeSum(int i, int j){
+    return getSum(j) - getSum(i);
+}
+
+{% endhighlisght %}
 
 
 
