@@ -128,7 +128,9 @@ public int getRangeSum(int i, int j){
 {% endhighlisght %}
 
 
+完整代码请[参考这里]。
 
 [Range Sum Query - Immutable]: https://leetcode.com/problems/range-sum-query-immutable/
 [Range Sum Query - Mutable]: https://leetcode.com/problems/range-sum-query-mutable/
 [这里]: https://github.com/sophiesongge/LeetCode/blob/master/src/RangeSumQuery_Immutable.java
+[参考这里]: https://github.com/sophiesongge/LeetCode/blob/master/src/RangeSumQuery_Mutable.java
