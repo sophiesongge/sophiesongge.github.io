@@ -53,7 +53,7 @@ hints? 好啊。我说。人都有紧张的时候嘛, 说不定她一紧张就�
 
 拿这道题为例, 如果单纯让你Insert Delete是O(1)那很容易, HashMap就解决了; 如果单纯让你getRandom()是O(1), 那也很容易, ArrayList也能解决。问题在于怎么把两个combine在一起。 想到以上这步并不难, 而且想到这里, 这道题其实也就解决了。HashMap的缺点在于不能random get, 那就让random get
 的功能由ArrayList来辅助实现, 但是ArrayList不能Insert Delete是O(1), 退而求其次, 如果每次都在ArrayList的尾部add或者remove就能变成O(1)了。 嗯, 又近了一步。 可是问题是我每次想删除的元素不一定就在ArrayList的尾部啊!! 要不把它换到尾部去吧, 对, 就这么办, 把它和尾部的元素对调。 但是如果对调, 
-我需要知道这个元素在ArrayList中的位置, 对了, 我不是有个HashMap嘛, 让HashMap的key是我想插入的元素, value是这个元素在ArrayList中的位置不就得了!!! 问题解决了。
+我需要知道这个元素在ArrayList中的位置, 对了, 我不是有个HashMap嘛, 让HashMap的key是我想插入的元素, value是这个元素在ArrayList中的位置不就得了!!! 问题解决了。老规矩, 完整代码在[这里]。
 
 我还想再强调一遍, 养成一个良好的思考习惯真的非常重要, 如果你现在没有, 那么请你一定从现在开始培养! 要找工作的同学, 都是刚刚毕业, 或者即将毕业的学生, 你们还很年轻, 以后的路很长, 养成一个好的思考习惯对以后的路都很有帮助。 不然只能每天耗在那里, 时间也浪费掉了, 然后还抱怨: 我也学了啊, 我也工作了啊, 
 为什么别人都有成绩, 我没有? 
@@ -67,3 +67,4 @@ So, for your own good, train your brain just like train your muscle!
 P.S.最后这篇文章可能有点跑题, 没有说到太多具体的解题思路, 但是我觉得我已经说的足够多了, 剩下的只能由你自己想了。
 
 [Insert Delete getRandom O(1)]: https://leetcode.com/problems/insert-delete-getrandom-o1/
+[这里]: https://github.com/sophiesongge/LeetCode/blob/master/src/InsertDeleteRandom.java

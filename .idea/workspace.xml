@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098adae-dcae-4c43-b4b4-702489c39e01" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-01-19-get-random.markdown" afterPath="$PROJECT_DIR$/_posts/2017-01-19-get-random.markdown" />
     </list>
     <ignored path="sophiesongge.github.io.iws" />
@@ -69,8 +70,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="131">
-                <caret line="49" column="81" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
+              <first_editor relative-caret-position="401">
+                <caret line="69" column="86" selection-start-line="69" selection-start-column="86" selection-end-line="69" selection-end-column="86" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -872,12 +873,12 @@
       <workItem from="1481727386059" duration="1755000" />
       <workItem from="1481736511719" duration="7839000" />
       <workItem from="1482165004848" duration="6715000" />
-      <workItem from="1484843736312" duration="4901000" />
+      <workItem from="1484843736312" duration="5087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82548000" />
+    <option name="totallyTimeSpent" value="82734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1389,8 +1390,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="131">
-            <caret line="49" column="81" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
+          <first_editor relative-caret-position="401">
+            <caret line="69" column="86" selection-start-line="69" selection-start-column="86" selection-end-line="69" selection-end-column="86" />
             <folding />
           </first_editor>
           <second_editor />
