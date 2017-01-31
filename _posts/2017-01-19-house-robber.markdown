@@ -16,14 +16,18 @@ House Robber
 ============
 
 第一道题是一道非常典型的动态规划。 之前看过很多写动态规划的攻略, 有写的非常好的, 但大部分其实都不知道想说什么鬼。。。 其实动态规划很简单, 用一句话来说它的思想就是: 用一个数组把中间状态存起来,
-从而instead of每次都重新计算, 我们希望每次用到之前的结果的时候都可以在数组中取得。难点在于*中间状态*怎么定义。
+从而instead of每次都重新计算, 我们希望每次用到之前的结果的时候都可以在数组中取得。难点在于*中间状态*怎么定义, 也就是用来动态规划的数组dp\[\]里面存的是什么。 这道题很简单, 所以这个中间状态也
+很好找, 让它存储以当前位为结尾小偷能偷到的最大值即可, 由于不能连续偷两家, 那么, 第dp\[i\]则有两种可能, (1)偷当前这家, (2)不偷当前这家, 由于小偷希望偷到最大值, 则最优解为(1)和(2)中大的那个, 
+既, dp\[i\]的值即为nums\[i\]+dp\[i-2\]和dp\[i-1\]中大的那个。
+
+多的就不用说了吧, 请直接参考完整[代码]。
 
 
 
----未完待续
 
 
 
 [House Robber]: https://leetcode.com/problems/house-robber/
-[House Robber I]: https://leetcode.com/problems/house-robber-ii
-[House Robber II]: https://leetcode.com/problems/house-robber-iii/
+[House Robber II]: https://leetcode.com/problems/house-robber-ii
+[House Robber III]: https://leetcode.com/problems/house-robber-iii/
+[代码]: 

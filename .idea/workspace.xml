@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0098adae-dcae-4c43-b4b4-702489c39e01" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-01-19-get-random.markdown" afterPath="$PROJECT_DIR$/_posts/2017-01-19-get-random.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-01-19-house-robber.markdown" afterPath="$PROJECT_DIR$/_posts/2017-01-19-house-robber.markdown" />
     </list>
     <ignored path="sophiesongge.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +38,7 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="-169">
+              <first_editor relative-caret-position="1470">
                 <caret line="98" column="56" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
                 <folding />
               </first_editor>
@@ -47,63 +47,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-01-19-house-robber.markdown" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2017-01-19-house-robber.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2017-01-19-house-robber.markdown">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="206">
-                <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2017-01-19-get-random.markdown" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-01-19-get-random.markdown">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
               <first_editor relative-caret-position="401">
-                <caret line="69" column="86" selection-start-line="69" selection-start-column="86" selection-end-line="69" selection-end-column="86" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-09-06-bloom-filter.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-09-06-bloom-filter.markdown">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="825">
-                <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-12-14-word-ladder.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-12-14-word-ladder.markdown">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="3435">
-                <caret line="229" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+                <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -325,8 +277,8 @@
         <option value="$PROJECT_DIR$/_posts/2016-12-14-word-ladder.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-12-13-java-exception.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-12-16-range-sum-query.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2017-01-19-house-robber.markdown" />
         <option value="$PROJECT_DIR$/_posts/2017-01-19-get-random.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2017-01-19-house-robber.markdown" />
       </list>
     </option>
   </component>
@@ -399,8 +351,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -873,12 +825,14 @@
       <workItem from="1481727386059" duration="1755000" />
       <workItem from="1481736511719" duration="7839000" />
       <workItem from="1482165004848" duration="6715000" />
-      <workItem from="1484843736312" duration="5087000" />
+      <workItem from="1484843736312" duration="5142000" />
+      <workItem from="1485857428784" duration="6000" />
+      <workItem from="1485874709635" duration="1158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82734000" />
+    <option name="totallyTimeSpent" value="83953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1323,14 +1277,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-12-14-word-ladder.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2016-12-16-range-sum-query.markdown">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="3435">
-            <caret line="229" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <first_editor relative-caret-position="1470">
+            <caret line="98" column="56" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-01-19-get-random.markdown">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="386">
+            <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1348,7 +1316,7 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="825">
+          <first_editor relative-caret-position="446">
             <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
             <folding />
           </first_editor>
@@ -1356,14 +1324,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-12-16-range-sum-query.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2016-12-14-word-ladder.markdown">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="-169">
-            <caret line="98" column="56" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
+          <first_editor relative-caret-position="446">
+            <caret line="229" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1376,22 +1344,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="206">
-            <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-01-19-get-random.markdown">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
           <first_editor relative-caret-position="401">
-            <caret line="69" column="86" selection-start-line="69" selection-start-column="86" selection-end-line="69" selection-end-column="86" />
+            <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
             <folding />
           </first_editor>
           <second_editor />
