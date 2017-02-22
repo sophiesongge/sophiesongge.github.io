@@ -3,7 +3,7 @@ layout: post
 title:  "LeetCode刷题记之Best Time to Buy and Sell Stock"
 date:   2017-02-15 17:56:00 +0200
 categories: leetcode
-use_math: false
+use_math: true
 ---
 
 今天要讨论的题目是Best Time to Buy and Sell Stock, 不过不要妄想会做这道题之后就能变成像巴菲特那样的股坛神话, 因为这道题其实是个马后炮 :D
