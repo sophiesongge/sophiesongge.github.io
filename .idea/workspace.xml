@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098adae-dcae-4c43-b4b4-702489c39e01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-15-buy-sell-stock.markdown" afterPath="$PROJECT_DIR$/_posts/2017-02-15-buy-sell-stock.markdown" />
     </list>
     <ignored path="sophiesongge.github.io.iws" />
@@ -67,8 +66,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-02-15-buy-sell-stock.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="176">
-                <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+              <first_editor relative-caret-position="401">
+                <caret line="140" column="48" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -847,12 +846,12 @@
       <workItem from="1485874709635" duration="3773000" />
       <workItem from="1485968551839" duration="5000" />
       <workItem from="1487177725142" duration="422000" />
-      <workItem from="1487253791582" duration="11410000" />
+      <workItem from="1487253791582" duration="11695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98405000" />
+    <option name="totallyTimeSpent" value="98690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1365,8 +1364,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-02-15-buy-sell-stock.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="176">
-            <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <first_editor relative-caret-position="401">
+            <caret line="140" column="48" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
             <folding />
           </first_editor>
           <second_editor />

@@ -49,7 +49,7 @@ f(10) = f(9) + f(8), 也就是说, 当我们计算第10位的时候, 需要用�
 所以聪明的宝宝们只需要存储每一步的最优解就好了啊 (递推)。 这个过程乍一看是不是和斐波那契的那个很像? 但是不好意思, 其实这个思想教作"贪心"。为什么? 因为这个过程中每一次我们只保留上一步的最优解即可, 我们不关心之前的情况, 也不关心这个最优解是怎么来的, 因为我们
 确定的知道上一步的最优解可以推出这一步的最优解。 这就是很好的"贪心"的思想, 在贪心算法中, 我们每一步都希望走在当前看来最后的方向。 
 
-但是在动态规划中, 我们并不能确定这一步的最优解是不是从上一步的最优解得来, 唯一能确定的是这一步的最优解肯定是从之前某一步的最优解得来的, 所以我们需要存储之前所有步的最优解。 
+但是在动态规划中, 我们并不能确定这一步的最优解是不是从上一步的最优解得来, 唯一能确定的是这一步的最优解肯定是从之前某一步的最优解得来的, 所以我们需要存储之前所有步的最优解。 如果还是觉得抽象可以去看看[这道题]。
 
 
 换句话说, 动态规划会有很多子问题, 而且这些子问题是不独立的, 需要把全部子问题都解决掉才能找到最终解; 而贪心只有一个子问题, 只要解决掉这个子问题即可。 动态规划是自底向上的, 每一步都要根据策略得到一个更小规模的问题。最后解决所有最小规模的问题, 得到整个问题最优解。
@@ -137,3 +137,5 @@ Best Time to Buy and Sell Stock IV
 [代码Cooldown]: https://github.com/sophiesongge/LeetCode/blob/master/src/solution/BuySellStockCooldown.java
 [代码III]: https://github.com/sophiesongge/LeetCode/blob/master/src/solution/BuySellStockIII.java
 [代码IV]: https://github.com/sophiesongge/LeetCode/blob/master/src/solution/BuySellStockIV.java
+
+[这道题]: https://leetcode.com/problems/word-break/
