@@ -61,6 +61,8 @@ Bloom Filter中每个参数的计算方式。
 
 这个Lemma计算Bloom Filter中任意一个bit位为0的概率, 计算的思路与计算balls into bins模型中任意一个盒子为空的概率类似。
 
+---未完待续
+
 
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
 [Balls into Bins]: https://en.wikipedia.org/wiki/Balls_into_bins
