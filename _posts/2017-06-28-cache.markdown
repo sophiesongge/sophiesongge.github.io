@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "来聊聊缓存吧"
+date:   2017-06-28 15:56:55 +0100
+categories: leetcode
+use_math: false
+---
+
+今天咱们来一起聊聊缓存这个话题吧。
+
+缓存是什么？
+=========
+
+* 存储使用频繁的数据的临时地方
+* 因为读取原始数据代价太大了，缓存起来可以取得快些
+
+术语
+====
+
+* 命中： 一个条目通过一个标记在缓存中被找到
+* Cache Miss： 如果还有空间， 那么没命中的条目会被存储到缓存中来； 如果没有空间了，又没命中， 则会按照某种<font color="red">策略<font>，把缓存中的旧对象踢出，而把新对象加入缓存池
+* 存储成本： 把数据放入缓存的时间、空间成本
+
+缓存算法
+=======
+
+前文提到的<font color="red">策略<font>，也可以称之为替代策略， 既缓存算法。常用的缓存算法有：LRU, LFU, FIFO, Random Cache, 2Q, ARC, MRU等等。本文主要来介绍FIFO，LRU和LFU这三种。
+
+其中LRU和LFU在LeetCode上可以找到题目：
+
+*[LRU Cache]
+*[LFU Cache]
+
+
+FIFO Cache:
+===========
+
+在讲LRU和LFU之前我们先来看一下FIFO算法，这是最简单的缓存算法，可以帮助我们对后续内容的理解。
+
+FIFO大家都知道就是First In First Out，先进先出。
+
+* 核心原则： 最新进入到缓存中的数据应最早被淘汰。
+
+* FIFO Cache应支持的操作：
+
+<font color="red">get(key): <font>如cache中存在该key，则返回其对应的value值，否则返回-1
+
+<font color="red">set(key, value): <font>如cache中存在该key，则update其value值，如不存在则将其插入，若cache已满，则淘汰最早进入cache的key后再插入新key
+
+* 实现思路： 利用双向链表保存数据，当来了新数据之后就添加到链表末尾， 如果Cache已满，则把链表头删除，然后再把数据添加到链表末尾。访问数据的时候，如果Cache中存在，则返回其value值，否则返回-1.为了提高访问效率，可以利用hashmap保存每个key在链表中对应的位置。
+
+* [FIFO代码]: 请点击前面的链接。链表的结构如下图所示：
+
+        null <==> head <==> node <==> tail <==> null
+
+   其中head和tail是两个key和value都为0的dummy node，每次添加删除都是在head的后面和tail的前面
+
+
+LRU Cache (Least Recently Used) 最久没被访问算法：
+==============================================
+
+* 核心思想（设计原则）： 如果一个数据在最近一段时间没有被访问，那么在将来它被访问的可能性也很小。
+
+* 实现思路： 利用链表和HashMap
+
+插入数据时，如果数据项在链表中存在，则把该节点移到链表头部，
+
+[LRU Cache]: https://leetcode.com/problems/lru-cache/#/description
+[LFU Cache]: https://leetcode.com/problems/lfu-cache/#/description
+[FIFO代码]: https://github.com/sophiesongge/LeetCode/blob/master/src/solution/FIFOCache.java
