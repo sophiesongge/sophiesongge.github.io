@@ -28,8 +28,8 @@ use_math: false
 
 其中LRU和LFU在LeetCode上可以找到题目：
 
-*[LRU Cache]
-*[LFU Cache]
+* [LRU Cache]
+* [LFU Cache]
 
 
 FIFO Cache:
@@ -65,7 +65,7 @@ LRU Cache (Least Recently Used) 最久没被访问算法：
 
 插入数据时，如果数据项在链表中存在，则把该节点移到链表头部，如果不存在，则新建一个节点，放到链表头部（head的后面）；若缓存满了，则删除链表最后一个节点（tail前面的）即可。访问的时候，如果数据项在链表中存在，则将其移动到头部，并返回其value；否则返回-1.
 
-*LRU Cache应支持的操作：
+* LRU Cache应支持的操作：
 
 <font color="red">get(key): </font>如果key在HashMap中存在，则将对应的节点放在表头，并返回其value，如果不存在则返回-1.
 
