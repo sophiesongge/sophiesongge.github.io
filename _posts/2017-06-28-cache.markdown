@@ -80,13 +80,24 @@ LRU Cache (Least Recently Used) 最久没被访问算法：
 LFU Cache (Least Frequently Used) 最近最少使用算法：
 ==============================================
 
-*
+* 核心思想：如果一个数据在最近一段时间内被使用的次数很少，那么在将来一段时间内它被使用的可能性也很小。
 
+* 支持的操作：
 
+<font color="red">get(key): </font>如果cache中存在key，则返回相应的value值，否则返回-1
 
+<font color="red">set(key, value): </font>如果cache中存在该key，则重置value值，如果不存在则将该key插入到cache中，若cache已满，则淘汰访问最少的数据。
+
+* 思路：
+
+（1）用小顶堆（PriorityQueue）+HashMap
+（2）用数组存储数据项， 用hashmap存储每个数据项在数组中的位置， 为每个数据项设置访问频次，如果命中，频次自增，cache满时用新数据替换频次最低的数据项
+
+* [LFU代码]，请点击前面链接。
 
 
 [LRU Cache]: https://leetcode.com/problems/lru-cache/#/description
 [LFU Cache]: https://leetcode.com/problems/lfu-cache/#/description
 [FIFO代码]: https://github.com/sophiesongge/LeetCode/blob/master/src/solution/FIFOCache.java
 [LRU代码]: https://github.com/sophiesongge/LeetCode/blob/master/src/solution/LRUCache.java
+[LFU代码]: https://github.com/sophiesongge/LeetCode/blob/master/src/solution/LFUCache.java
