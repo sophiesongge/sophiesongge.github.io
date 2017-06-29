@@ -18,7 +18,7 @@ use_math: false
 ====
 
 * 命中： 一个条目通过一个标记在缓存中被找到
-* Cache Miss： 如果还有空间， 那么没命中的条目会被存储到缓存中来； 如果没有空间了，又没命中， 则会按照某种<font color="red">策略<font>，把缓存中的旧对象踢出，而把新对象加入缓存池
+* Cache Miss： 如果还有空间， 那么没命中的条目会被存储到缓存中来； 如果没有空间了，又没命中， 则会按照某种<font color="red">策略</font>，把缓存中的旧对象踢出，而把新对象加入缓存池
 * 存储成本： 把数据放入缓存的时间、空间成本
 
 缓存算法
@@ -43,9 +43,9 @@ FIFO大家都知道就是First In First Out，先进先出。
 
 * FIFO Cache应支持的操作：
 
-<font color="red">get(key): <font>如cache中存在该key，则返回其对应的value值，否则返回-1
+<font color="red">get(key): </font>如cache中存在该key，则返回其对应的value值，否则返回-1
 
-<font color="red">set(key, value): <font>如cache中存在该key，则update其value值，如不存在则将其插入，若cache已满，则淘汰最早进入cache的key后再插入新key
+<font color="red">set(key, value): </font>如cache中存在该key，则update其value值，如不存在则将其插入，若cache已满，则淘汰最早进入cache的key后再插入新key
 
 * 实现思路： 利用双向链表保存数据，当来了新数据之后就添加到链表末尾， 如果Cache已满，则把链表头删除，然后再把数据添加到链表末尾。访问数据的时候，如果Cache中存在，则返回其value值，否则返回-1.为了提高访问效率，可以利用hashmap保存每个key在链表中对应的位置。
 
