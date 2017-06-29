@@ -91,9 +91,10 @@ LFU Cache (Least Frequently Used) 最近最少使用算法：
 * 思路：
 
 （1）用小顶堆（PriorityQueue）+HashMap
+
 （2）用数组存储数据项， 用hashmap存储每个数据项在数组中的位置， 为每个数据项设置访问频次，如果命中，频次自增，cache满时用新数据替换频次最低的数据项
 
-* [LFU代码]，请点击前面链接。
+* [LFU代码]，请点击前面链接。该代码只实现了思路（1），这个思路时间效率并不是最优的，因为PriorityQueue的插入复杂度是O(log(n))，其实是有O(n)复杂度的方法的。但是这个思路最容易理解。
 
 
 [LRU Cache]: https://leetcode.com/problems/lru-cache/#/description
