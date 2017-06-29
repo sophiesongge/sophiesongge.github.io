@@ -57,3 +57,6 @@ IT公司的精髓。 中国那个经常晚上10点整栋大楼还通体亮灯，
 生活总是艰辛的。 但是一切都还要继续。 所以鼓足勇气， 面对所有迎面而来的挑战吧。
 
 
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/IMG_0790.JPG?raw=true)
+
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/2017.4.12-63.jpg?raw=true)
