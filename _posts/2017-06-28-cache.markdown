@@ -74,6 +74,14 @@ LRU Cache (Least Recently Used) 最久没被访问算法：
 
 * [LRU代码], 请点击前面的链接。
 
+这里有一个小技巧，就是我们可以把addToHead()和deleteNode()两个方法提前写出来。因为这两个方法在很多地方可以被复用。
+
+
+LFU Cache (Least Frequently Used) 最近最少使用算法：
+==============================================
+
+*
+
 
 
 
