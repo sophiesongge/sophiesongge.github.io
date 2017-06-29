@@ -50,7 +50,7 @@ FIFO大家都知道就是First In First Out，先进先出。
 
 * 实现思路： 利用双向链表保存数据，当来了新数据之后就添加到链表末尾， 如果Cache已满，则把链表头删除，然后再把数据添加到链表末尾。访问数据的时候，如果Cache中存在，则返回其value值，否则返回-1.为了提高访问效率，可以利用hashmap保存每个key在链表中对应的位置。
 
-* [FIFO代码]: 请点击前面的链接。链表的结构如下图所示：
+* [FIFO代码], 请点击前面的链接。链表的结构如下图所示：
 
         null <==> head <==> node <==> tail <==> null
 
@@ -72,7 +72,7 @@ LRU Cache (Least Recently Used) 最久没被访问算法：
 
 <font color="red">set(key, value): </font>如果key存在于HashMap中，则先重置对应的value值，然后获取当前节点，将其删除，并移动到表头。否则，将其插入到表头。
 
-* [LRU代码]: 请点击前面的链接。
+* [LRU代码], 请点击前面的链接。
 
 
 
