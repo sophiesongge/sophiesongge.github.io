@@ -67,9 +67,9 @@ LRU Cache (Least Recently Used) 最久没被访问算法：
 
 *LRU Cache应支持的操作：
 
-<font color="red">get(key): <font>如果key在HashMap中存在，则将对应的节点放在表头，并返回其value，如果不存在则返回-1.
+<font color="red">get(key): </font>如果key在HashMap中存在，则将对应的节点放在表头，并返回其value，如果不存在则返回-1.
 
-<font color="red">set(key, value): <font>如果key存在于HashMap中，则先重置对应的value值，然后获取当前节点，将其删除，并移动到表头。否则，将其插入到表头。
+<font color="red">set(key, value): </font>如果key存在于HashMap中，则先重置对应的value值，然后获取当前节点，将其删除，并移动到表头。否则，将其插入到表头。
 
 * [LRU代码]: 请点击前面的链接。
 
