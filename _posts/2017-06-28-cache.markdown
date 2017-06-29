@@ -63,8 +63,18 @@ LRU Cache (Least Recently Used) 最久没被访问算法：
 
 * 实现思路： 利用链表和HashMap
 
-插入数据时，如果数据项在链表中存在，则把该节点移到链表头部，
+插入数据时，如果数据项在链表中存在，则把该节点移到链表头部，如果不存在，则新建一个节点，放到链表头部（head的后面）；若缓存满了，则删除链表最后一个节点（tail前面的）即可。访问的时候，如果数据项在链表中存在，则将其移动到头部，并返回其value；否则返回-1.
+
+*LRU Cache应支持的操作：
+
+<font color="red">get(key): <font>如果key在HashMap中存在，则将对应的节点放在表头，并返回其value，如果不存在则返回-1.
+
+<font color="red">set(key, value): <font>如果key存在于HashMap中，则先重置对应的value值，然后获取当前节点，将其删除，并移动到表头。否则，将其插入到表头。
+
+* [LRU代码]: 请点击前面的链接。
+
 
 [LRU Cache]: https://leetcode.com/problems/lru-cache/#/description
 [LFU Cache]: https://leetcode.com/problems/lfu-cache/#/description
 [FIFO代码]: https://github.com/sophiesongge/LeetCode/blob/master/src/solution/FIFOCache.java
+[LRU代码]: https://github.com/sophiesongge/LeetCode/blob/master/src/solution/LRUCache.java
