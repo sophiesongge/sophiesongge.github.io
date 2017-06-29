@@ -24,7 +24,7 @@ use_math: false
 缓存算法
 =======
 
-前文提到的<font color="red">策略<font>，也可以称之为替代策略， 既缓存算法。常用的缓存算法有：LRU, LFU, FIFO, Random Cache, 2Q, ARC, MRU等等。本文主要来介绍FIFO，LRU和LFU这三种。
+前文提到的<font color="red">策略</font>，也可以称之为替代策略， 既缓存算法。常用的缓存算法有：LRU, LFU, FIFO, Random Cache, 2Q, ARC, MRU等等。本文主要来介绍FIFO，LRU和LFU这三种。
 
 其中LRU和LFU在LeetCode上可以找到题目：
 
