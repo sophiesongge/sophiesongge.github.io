@@ -58,6 +58,9 @@ House Robber III
 
 好了, 问题解决了, [代码请点我]。
 
+如果您觉得本文有用, 请扫描一下二维码, 随意打赏 =^-^=
+
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/dashang.JPG?raw=true=10x10)
 
 
 [House Robber]: https://leetcode.com/problems/house-robber/
