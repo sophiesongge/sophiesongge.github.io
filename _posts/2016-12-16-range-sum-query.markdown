@@ -130,6 +130,10 @@ public int getRangeSum(int i, int j){
 
 完整代码请[参考这里]。
 
+如果您觉得本文有用, 请扫描一下二维码, 随意打赏 =^-^=
+
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/dashang.JPG?raw=true=10x10)
+
 [Range Sum Query - Immutable]: https://leetcode.com/problems/range-sum-query-immutable/
 [Range Sum Query - Mutable]: https://leetcode.com/problems/range-sum-query-mutable/
 [这里]: https://github.com/sophiesongge/LeetCode/blob/master/src/RangeSumQuery_Immutable.java

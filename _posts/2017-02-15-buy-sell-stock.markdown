@@ -123,6 +123,9 @@ Best Time to Buy and Sell Stock IV
 
 好了, 看代码吧: [代码IV]。
 
+如果您觉得本文有用, 请扫描一下二维码, 随意打赏 =^-^=
+
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/dashang.JPG?raw=true=10x10)
 
 
 
