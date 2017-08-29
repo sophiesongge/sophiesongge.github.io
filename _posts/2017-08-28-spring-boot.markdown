@@ -20,7 +20,7 @@ Dependency Injection有助于将这些类粘合在一起，并且在同一时间
 
 * 依赖：
 
-在Class A中有Class B的实例，则成Class A对Class B有一个依赖。例如：
+在Class A中有Class B的实例，则称Class A对Class B有一个依赖。例如：
 
 {% highlight java %}
 public class Human {
@@ -115,7 +115,7 @@ IoC框架用依赖注入来实现控制反转。当然控制反转还有其他�
 Spring中的依赖注入
 ================
 
-让我们看一下这个例子：
+让我们看一下这个例子：（注）
 
 {% highlight java %}
 class MovieLister...
@@ -132,5 +132,31 @@ class ColonMovieFinder...
 {% endhighlight %}
 
 在这里我们先定义了两个类，它们都使用了依赖注入的方式从外部传入依赖，而不是自己创建依赖。问题是，谁创建了finder和filename，并把finder传给了MovieLister，把filename传给了ColonMovieFinder？答案是：Spring IoC容器。
+对象的依赖由对象的构造函数的参数、工厂方法的参数和属性来定义，然后由Spring IoC容器在创建bean的时候将依赖注入对象。
 
-要使用Spring IoC容器，首先要进行配置。有两种方式来进行配置：通过代码注解方式配置和通过xml进行配置。
+Spring IoC的基础包是：org.springframework.beans 和 org.springframework.context
+
+BeanFactory接口就是所谓的Spring IoC容器，它可以管理任何类型的对象。ApplicationContext是BeanFactory的子接口，它添加了更丰富的特性。Spring IoC容器通过读取配置文件来实例化bean并装配bean之间的依赖关系。一旦Spring IoC容器的初始化完成，我们就可以试用它来管理所有的bean了。
+Spring中的bean是指被Spring IoC容器管理的各种对象，bean由Spring IoC容器负责实例化、装配、管理，bean本身以及bean之间的互相依赖由配置元数据定义。配置元数据也就是Spring的配置文件，它的作用是告诉Spring IoC容器应该如何实例化、装配和管理bean。
+
+配置文件可以通过xml、注解和java代码等形式来进行定义。
+
+假设我们有如下一个bean：
+
+{% highlight java %}
+public class HelloWorld {
+    public void sayHello(String name) {
+        System.out.println("Hello " + name);
+    }
+}
+{% endhighlight %}
+
+*基于xml方式来定义bean，需要在services.xml中写入：
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="helloWorldBean" class="study.spring.bean.HelloWorld">
+    </bean>
+</beans>
+{% endhighlight %}
