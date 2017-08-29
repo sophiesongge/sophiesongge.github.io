@@ -139,7 +139,7 @@ Spring IoC的基础包是：org.springframework.beans 和 org.springframework.co
 BeanFactory接口就是所谓的Spring IoC容器，它可以管理任何类型的对象。ApplicationContext是BeanFactory的子接口，它添加了更丰富的特性。Spring IoC容器通过读取配置文件来实例化bean并装配bean之间的依赖关系。一旦Spring IoC容器的初始化完成，我们就可以试用它来管理所有的bean了。
 Spring中的bean是指被Spring IoC容器管理的各种对象，bean由Spring IoC容器负责实例化、装配、管理，bean本身以及bean之间的互相依赖由配置元数据定义。配置元数据也就是Spring的配置文件，它的作用是告诉Spring IoC容器应该如何实例化、装配和管理bean。
 
-配置文件可以通过xml、注解和java代码等形式来进行定义。
+配置文件可以通过xml、java代码和注解等形式来进行定义。
 
 假设我们有如下一个bean：
 
@@ -151,7 +151,7 @@ public class HelloWorld {
 }
 {% endhighlight %}
 
-*基于xml方式来定义bean，需要在services.xml中写入：
+* 基于xml方式来定义bean，需要在services.xml中写入：
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
@@ -160,3 +160,20 @@ public class HelloWorld {
     </bean>
 </beans>
 {% endhighlight %}
+
+其中bean id是这个bean的唯一标识，可以用这个id在其他bean中引用这个bean，而class用来指定该bean的全类名。
+
+* 基于java代码和注解的 bean 定义：
+
+{% highlight java %}
+@Configuration
+public class HelloWorldConfig {
+    @Bean(name="helloWorldBean")
+    public HelloWorld helloWorld() {
+        return new HelloWorld();
+    }
+}
+{% endhighlight %}
+
+在这里，我们使用@Configuration注解来定义配置类，使用@Bean注解来定义bean，使用@Bean的name属性来定义bean id
+
