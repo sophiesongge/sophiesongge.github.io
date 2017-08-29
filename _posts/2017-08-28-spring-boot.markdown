@@ -136,7 +136,7 @@ class ColonMovieFinder...
 
 Spring IoC的基础包是：org.springframework.beans 和 org.springframework.context
 
-BeanFactory接口就是所谓的Spring IoC容器，它可以管理任何类型的对象。ApplicationContext是BeanFactory的子接口，它添加了更丰富的特性。Spring IoC容器通过读取配置文件来实例化bean并装配bean之间的依赖关系。一旦Spring IoC容器的初始化完成，我们就可以试用它来管理所有的bean了。
+BeanFactory接口就是所谓的Spring IoC容器，它可以管理任何类型的对象。ApplicationContext是BeanFactory的子接口，它添加了更丰富的特性。Spring IoC容器通过读取配置文件来实例化bean并装配bean之间的依赖关系。一旦Spring IoC容器的初始化完成，我们就可以使用它来管理所有的bean了。
 Spring中的bean是指被Spring IoC容器管理的各种对象，bean由Spring IoC容器负责实例化、装配、管理，bean本身以及bean之间的互相依赖由配置元数据定义。配置元数据也就是Spring的配置文件，它的作用是告诉Spring IoC容器应该如何实例化、装配和管理bean。
 
 配置文件可以通过xml、java代码和注解等形式来进行定义。
@@ -202,7 +202,7 @@ public static void main(String[] args) {
 
 通过上面这个简单的例子我们明白了Spring IoC的配置过程，当然，我个人认为，上面这个简单的例子是没有必要使用bean来返回实例的，可以简单的初始化一个实例，达到的效果和使用IoC容器管理是一样的。
 
-真正需要Spring IoC来进行管理的是像段首这样有依赖的类。回到段首我们举的MovieLister和ColonMovieFinder的例子中，我们同样可以试用xml和代码注解两种方式配置这个IoC容器。xml配置的方式如下：
+真正需要Spring IoC来进行管理的是像段首这样有依赖的类。回到段首我们举的MovieLister和ColonMovieFinder的例子中，我们同样可以使用xml和代码注解两种方式配置这个IoC容器。xml配置的方式如下：
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
@@ -219,9 +219,8 @@ public static void main(String[] args) {
 </beans>
 {% endhighlight %}
 
-每个bean代表一个对象的实例（默认是[Singleton模式]，即在程序的生命周期内，所有的对象都只有一个实例，进行重复使用），
-
-
+每个bean代表一个对象的实例（默认是[Singleton模式]，即在程序的生命周期内，所有的对象都只有一个实例，进行重复使用），通过配置bean，IoC容器在启动的时候会根据配置生成bean实例。这里Spring IoC容器会根据配置创建MovieFinder，
+在运行的时候把MovieFinder赋值给MovieLister的finder属性，完成依赖注入的过程。
 
 
 [Singleton模式]: https://sophiesongge.github.io/design/pattern/2016/11/18/singleton-pattern.html
