@@ -6,9 +6,6 @@ categories: backend
 use_math: false
 ---
 
-Spring
-======
-
 Spring 最认同的技术是控制反转的依赖注入dependency injection（DI）模式。控制反转Inversion of Control（IoC）是一个通用的概念，它可以用许多不同的方式去表达，依赖注入仅仅是控制反转的一个具体的例子。
 
 依赖注入（Dependency Injection）
