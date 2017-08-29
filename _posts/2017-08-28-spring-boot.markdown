@@ -177,3 +177,25 @@ public class HelloWorldConfig {
 
 在这里，我们使用@Configuration注解来定义配置类，使用@Bean注解来定义bean，使用@Bean的name属性来定义bean id
 
+实例化Spring IoC容器非常简单，只需要告诉Spring IoC容器配置文件的位置即可。
+
+* 实例化基于xml配置的Spring IoC容器：
+
+{% highlight java %}
+ApplicationContext context = new ClassPathXmlApplicationContext("services.xml");
+{% endhighlight %}
+
+* 实例化基于java代码和注解配置的Spring IoC容器：
+
+{% highlight java %}
+ApplicationContext applicationContext = new AnnotationConfigApplicationContext(HelloWorldConfig.class);
+{% endhighlight %}
+
+同样，我们可以从Spring IoC容器中获取bean：
+{% highlight java %}
+public static void main(String[] args) {
+    ApplicationContext applicationContext = new AnnotationConfigApplicationContext(HelloWorldConfig.class);
+    HelloWorld helloWorld = applicationContext.getBean(HelloWorld.class);
+    helloWorld.sayHello("test");
+}
+{% endhighlight %}
