@@ -199,3 +199,29 @@ public static void main(String[] args) {
     helloWorld.sayHello("test");
 }
 {% endhighlight %}
+
+通过上面这个简单的例子我们明白了Spring IoC的配置过程，当然，我个人认为，上面这个简单的例子是没有必要使用bean来返回实例的，可以简单的初始化一个实例，达到的效果和使用IoC容器管理是一样的。
+
+真正需要Spring IoC来进行管理的是像段首这样有依赖的类。回到段首我们举的MovieLister和ColonMovieFinder的例子中，我们同样可以试用xml和代码注解两种方式配置这个IoC容器。xml配置的方式如下：
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="MovieLister" class="spring.MovieLister">
+        <property name="finder">
+            <ref local="MovieFinder"/>
+        </property>
+    </bean>
+    <bean id="MovieFinder" class="spring.ColonMovieFinder">
+        <property name="filename">
+            <value>movies1.txt</value>
+        </property>
+    </bean>
+</beans>
+{% endhighlight %}
+
+每个bean代表一个对象的实例（默认是[Singleton模式]，即在程序的生命周期内，所有的对象都只有一个实例，进行重复使用），
+
+
+
+
+[Singleton模式]: https://sophiesongge.github.io/design/pattern/2016/11/18/singleton-pattern.html
