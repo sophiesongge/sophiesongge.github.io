@@ -118,17 +118,22 @@ Spring中的依赖注入
 让我们看一下这个例子：（注）
 
 {% highlight java %}
-class MovieLister...
+class MovieLister{
+    ...
     private MovieFinder finder;
     public void setFinder(MovieFinder finder) {
         this.finder = finder;
     }
-
-class ColonMovieFinder...
+    ...
+}
+class ColonMovieFinder{
+    ...
     private String filename;
     public void setFilename(String filename) {
         this.filename = filename;
     }
+    ...
+}
 {% endhighlight %}
 
 在这里我们先定义了两个类，它们都使用了依赖注入的方式从外部传入依赖，而不是自己创建依赖。问题是，谁创建了finder和filename，并把finder传给了MovieLister，把filename传给了ColonMovieFinder？答案是：Spring IoC容器。
@@ -222,5 +227,18 @@ public static void main(String[] args) {
 每个bean代表一个对象的实例（默认是[Singleton模式]，即在程序的生命周期内，所有的对象都只有一个实例，进行重复使用），通过配置bean，IoC容器在启动的时候会根据配置生成bean实例。这里Spring IoC容器会根据配置创建MovieFinder，
 在运行的时候把MovieFinder赋值给MovieLister的finder属性，完成依赖注入的过程。
 
+在对这段代码进行测试时，需要首先根据配置生成Spring IoC容器（既：ApplicationContext），然后从容器中获取MovieLister的实例。
+{% highlight java %}
+public void testWithSpring() throws Exception {
+    ApplicationContext apc = new FileSystemXmlApplicationContext("services.xml");
+    MovieLister lister = apc.getBean("MovieLister");
+    Movie[] movies = lister.moviesDirectedBy("Yimou Zhang");
+    asertEquals("Hong Gaoliang", movies[0].getTitle());
+}
+{% endhighlight %}
+
+
+(注)：java中类后面的三个点（String...）表示可变长度参数列表。它表明此处接受的参数为0到多个Object类型的对象，或者一个Object\[\]，如我们有一个方法叫做test(String...strings)，那么你还可以写方法test()，但你不能写test(String[] strings)，这样会出编译错误，系统提示出现重复的方法。
+在使用的时候，对于test(String...strings)，你可以直接用test()去调用，标示没有参数，也可以用去test("aaa")，也可以用test(new String[]{"aaa","bbb"})。
 
 [Singleton模式]: https://sophiesongge.github.io/design/pattern/2016/11/18/singleton-pattern.html
