@@ -237,5 +237,8 @@ public void testWithSpring() throws Exception {
 }
 {% endhighlight %}
 
+具体配置语法请参考Spring Documentation的[Dependencies]章节。
+
 
 [Singleton模式]: https://sophiesongge.github.io/design/pattern/2016/11/18/singleton-pattern.html
+[Dependencies]: https://docs.spring.io/spring/docs/current/spring-framework-reference/html/beans.html#beans-dependencies
