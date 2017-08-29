@@ -238,7 +238,4 @@ public void testWithSpring() throws Exception {
 {% endhighlight %}
 
 
-(注)：java中类后面的三个点（String...）表示可变长度参数列表。它表明此处接受的参数为0到多个Object类型的对象，或者一个Object\[\]，如我们有一个方法叫做test(String...strings)，那么你还可以写方法test()，但你不能写test(String[] strings)，这样会出编译错误，系统提示出现重复的方法。
-在使用的时候，对于test(String...strings)，你可以直接用test()去调用，标示没有参数，也可以用去test("aaa")，也可以用test(new String[]{"aaa","bbb"})。
-
 [Singleton模式]: https://sophiesongge.github.io/design/pattern/2016/11/18/singleton-pattern.html
