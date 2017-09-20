@@ -31,7 +31,7 @@ IT公司的精髓。 中国那个经常晚上10点整栋大楼还通体亮灯，
 生活就会这样平静的继续下去， 再不会有惊喜， 再不会有挑战， 慢慢的我也会变成晚上10点亮着灯的办公室窗子里摇晃的身影之一， 慢慢的我不会再对生活有任何激情， 慢慢的结婚、生子，
 慢慢的老去。 一想到这些，我的心里就总是不自觉的泛起一阵阵凉意。 有好几晚都辗转睡不好， 直到有一天早上突然惊醒， 脑海里浮现了四个大字"浪费生命"， 于是才有了后来的毅然决然。
 
-说起来诱惑还是很大的， 当时我也很纠结， 但是我一直很喜欢Steven Jobs的一句话：
+说起来诱惑还是很大的， 当时我也很纠结， 但是我一直很喜欢Steve Jobs的一句话：
 
 > Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. There is no reason not to follow your heart.
 
