@@ -68,6 +68,7 @@ Bloom Filter中每个参数的计算方式。
 
 所以，用k个Hash Functions插入一个元素后，某个特定bit位为0的概率为：$(1 - \frac{1}{m})^kn$
 
+并且：$\lim\limits_{m\to\infty}(1-\frac{1}{m})^{kn}=e^{\frac{-kn}{m}}$
 
 
 ---未完待续
