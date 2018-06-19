@@ -64,7 +64,10 @@ Bloom Filter中每个参数的计算方式。
 这个Lemma计算Bloom Filter中任意一个bit位为0的概率, 计算的思路与计算balls into bins模型中任意一个盒子为空的概率类似。
 
 **证明：**
-在用一个Hash Function插入一个元素后，某个特定bit位为0的概率为：$1 - \frac{1}{m}$
+用一个Hash Function插入一个元素后，某个特定bit位为0的概率为：$1 - \frac{1}{m}$
+
+所以，用k个Hash Functions插入一个元素后，某个特定bit位为0的概率为：$(1 - \frac{1}{m})^kn$
+
 
 
 ---未完待续
