@@ -38,7 +38,7 @@ Bloom Filter的思想非常简单。 一个Bloom Filter的物理结构其实是�
 
 在这个示例中, 我们的Bloom Filter由一个30 bits的Bit Vector以及3个Hash Functions来构成。 我们将三个元素$S_1$, $S_2$和$S_3$分别插入这个Bloom Filter中。
 然后对另外三个新元素$S_1$, $S_x$和$S_y$进行查询。 由图所示, $S_1$和$S_x$将被认为属于这个Bloom Filter, 因为所以相应的bit位均为1, 而$S_y$则被视为
-不属于这个Bloom Filter。 但是, 其中$S_x$为一个false positive的答案, 因为在插入的时候我们并没有插入这个元素。
+不属于这个Bloom Filter。 但是, 其中$S_x$为一个false positive的答案, 因为在插入的时候我们并没有插入这个元素。False Positive的答案是由Hash Collision造成的。我们可以根据要插入的元素的个数来变化BF的长度，从而减少误判率。
 
 Bloom Filter 主要参数的计算
 =========================
@@ -52,8 +52,8 @@ Bloom Filter 主要参数的计算
 其中需要插入Bloom Filter的最多元素的个数n我们是知道的, 或者至少是大致可以估算的。 所以构建一个Bloom Filter的时候, 主要需要设定bit位的个数, 从而来限制false positive rate
 的大小。 或者控制false positive rate的大小在一个固定值, 从而推算Bloom Filter的bit位的长度。
 
-在介绍Bloom Filter的参数计算之前, 我想先介绍一个概率理论中的经典呢模型, [Balls into Bins]模型。 这个模型在Computer Science领域有非常广泛的应用。 这个模型涉及n个球和m个盒子。
-每次, 将一个球投入其中一个盒子中。 将所有球都放在盒子中后, 我们观察每个盒子中球的数目。 我们将这个数目称为每个盒子的负载, 并且, 我们希望知道: 每个盒子的最大负载时多少。 Bloom
+在介绍Bloom Filter的参数计算之前, 我想先介绍一个概率理论中的经典呢模型, [Balls into Bins]模型。 这个模型在Computer Science领域有非常广泛的应用。 它涉及n个球和m个盒子。
+每次, 随机将一个球投入其中一个盒子中。 将所有球都放在盒子中后, 我们观察每个盒子中球的数目。 我们将这个数目称为每个盒子的负载, 并且, 我们希望知道: 每个盒子的最大负载是多少。 Bloom
  Filter的思想很大程度借鉴了Balls and Bins问题。 不同的是, 我们用多个hash functions将每个"球"扔了多次。 而false positive则是与每个"盒子"的负载相关。 下面我们将一步步介绍
 Bloom Filter中每个参数的计算方式。
 
@@ -62,6 +62,10 @@ Bloom Filter中每个参数的计算方式。
 **Lemma 1:**  用k个Hash Functions, 将n个元素插入到一个m bits的Bloom Filter中, 则这个Bloom Filter的任意一个bit位为0的概率将不会大于 $e^ {\frac{-k*n}{m}}$
 
 这个Lemma计算Bloom Filter中任意一个bit位为0的概率, 计算的思路与计算balls into bins模型中任意一个盒子为空的概率类似。
+
+**证明：**
+在用一个Hash Function插入一个元素后，某个特定bit位为0的概率为：$1 - \frac{1}{m}$
+
 
 ---未完待续
 
