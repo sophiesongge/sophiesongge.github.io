@@ -101,6 +101,8 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 
 **证明：** 假设$X_j$是一组随机变量的集合，并且当第j个bit位为0的时候$X_j$=1，反之$X_j$为0。则，根据Lemma 2， $E\left[X_j\right]$ = $(1-\frac{1}{m})^{kn} \approx e^{\frac{-kn}{m}}$
 
+假设X为一个代表仍然为0的bit位的个数的随机变量，则：$E\left[X\right]$ = $E\left[\sum_{i=1}^{m} X_i\right]$ = $\sum_{i=1}^{m} E\left[X_i\right] \approx me^{\frac{-kn}{m}} $
+
 
 
 
