@@ -92,11 +92,9 @@ $\lim\limits_{x\to0}(1+x)^{\frac{1}{x}}=e$
 
 $\lim\limits_{m\to\infty}(-\frac{1}{m})=0$
 
-$\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ =$\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{-m\times\frac{-kn}{m}})^k$ =$(1-e^{-\frac{nk}{m}})^k$
+$\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{-m\times\frac{-kn}{m}})^k$ = $(1-e^{-\frac{nk}{m}})^k$
 
-In the query stage, we consider that an element e is in a dataset, if all the hash bits for this
-element are set to 1 in the Bloom Filter formed by the elements of this dataset. So the false
-possitive rate is:
+
 
 ---未完待续
 
