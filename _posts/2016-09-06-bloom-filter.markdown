@@ -98,6 +98,8 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 
 **Lemma 3:** 假设我们用k个hash functions将n个元素插入到一个含有m个bit位的Bloom Filter中，则非0bit位的个数的期望值是：$m\cdot(1-e^{\frac{-kn}{m}})$
 
+**证明：** 假设$X_j$是一组随机变量的集合，并且当第j个bit位为0的时候$X_j$=1，反之$X_j$为0。则，根据Lemma 2， $E\left[X_j\right]$ = $(1-\frac{1}{m})^{kn} \approx e^{\frac{-kn}{m}}$
+
 
 
 
