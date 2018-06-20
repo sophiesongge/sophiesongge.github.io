@@ -22,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2016-09-06-bloom-filter.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="360">
-                <caret line="103" column="147" lean-forward="false" selection-start-line="103" selection-start-column="147" selection-end-line="103" selection-end-column="147" />
+              <first_editor relative-caret-position="397">
+                <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -898,8 +898,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="360">
-            <caret line="103" column="147" lean-forward="false" selection-start-line="103" selection-start-column="147" selection-end-line="103" selection-end-column="147" />
+          <first_editor relative-caret-position="397">
+            <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>

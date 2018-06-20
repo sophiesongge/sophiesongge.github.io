@@ -103,6 +103,9 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 
 假设X为一个代表仍然为0的bit位的个数的随机变量，则：$E\left[X\right]$ = $E\left[\sum_{i=1}^{m} X_i\right]$ = $\sum_{i=1}^{m} E\left[X_i\right] \approx me^{\frac{-kn}{m}} $
 
+所以非0bit位的个数的期望为：$m\cdot(1-e^{\frac{-kn}{m}})$
+
+
 
 
 
