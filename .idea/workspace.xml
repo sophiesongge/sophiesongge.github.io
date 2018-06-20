@@ -24,7 +24,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="263">
-                <caret line="96" column="241" lean-forward="false" selection-start-line="96" selection-start-column="241" selection-end-line="96" selection-end-column="241" />
+                <caret line="96" column="158" lean-forward="false" selection-start-line="96" selection-start-column="158" selection-end-line="96" selection-end-column="158" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -900,7 +900,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="263">
-            <caret line="96" column="241" lean-forward="false" selection-start-line="96" selection-start-column="241" selection-end-line="96" selection-end-column="241" />
+            <caret line="96" column="158" lean-forward="false" selection-start-line="96" selection-start-column="158" selection-end-line="96" selection-end-column="158" />
             <folding />
           </first_editor>
           <second_editor>

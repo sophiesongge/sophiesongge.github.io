@@ -94,7 +94,7 @@ $\lim\limits_{m\to\infty}(-\frac{1}{m})=0$
 
 $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{-m\times\frac{-kn}{m}})^k$ = $(1-e^{-\frac{nk}{m}})^k$
 
-<font color="red">**笔者注：** 很多人认为 p = $(1-(1-\frac{1}{m})^{kn})^k$ 为一个Bloom Filter的False Positive的概率，这里我希望澄清一下，事实上它是一个元素被认为属于一个Bloom Filter的概率，所以这个概率其实也包含True Positive的概率。但是它是false positive的upper bound，所以在本文中仍以这个概率为false positive的概率作为基础来进行计算。</font>
+<font color="red">笔者注：很多人认为 p = $(1-e^{-\frac{nk}{m}})^k$ 为一个Bloom Filter的False Positive的概率，这里我希望澄清一下，事实上它是一个元素被认为属于一个Bloom Filter的概率，所以这个概率其实也包含True Positive。但是它是false positive的upper bound，所以在本文中仍以这个概率为false positive的概率作为基础来进行计算。</font>
 
 
 
