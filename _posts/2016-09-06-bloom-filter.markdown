@@ -73,6 +73,9 @@ Bloom Filter中每个参数的计算方式。
 
 **Lemma 2:** 假设我们运用[Simple Uniform Hashing Functions]对Bloom Filter进行插入操作，则这个Bloom Filter的False Positive率p是m，n和k的函数，并且p = $(1-e^{-\frac{nk}{m}})^k$
 
+**证明：**
+Simple Uniform Hashing函数会将每一个元素以相等的概率hash去m个bit位中的一个。当用一个确定的hash函数处理一个确定的元素，某个特定的bit位$b_x$没有被设置为1的概率为：$1-\frac{1}{m}$
+
 ---未完待续
 
 
