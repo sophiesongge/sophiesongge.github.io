@@ -113,6 +113,15 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 
 **证明：** 根据Lemma 2， $p$ = $(1-e^{-\frac{nk}{m}})^k$
 
+所以，p可以被认为是k的一个函数：$p$ = $f(k)$ = $(1-e^{-\frac{nk}{m}})^k$
+
+则：f(k) = (1 - b^{-k})^k，b = e^{-\frac{n}{m}} （1）
+
+对方程（1）两边取log值，可以得到：ln[ f(k)] = k \cdot ln(1-b^{-k}) （2）
+
+对方程（2）两边求导，可以得到：\frac{1}{f(x)} \cdot f'(x) = ln(1-b^{-k}) + k \cdot \frac{1}{1-b^{-k}} \cdot (-1) \cdot (-b^{-k}) \cdot ln(b)
+                = ln(1-b^{-k}) + k \cdot \frac{b^{-k} \cdot ln(b)}{1-b^{-k}} （3）
+
 
 
 
