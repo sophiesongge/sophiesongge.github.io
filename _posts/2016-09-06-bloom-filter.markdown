@@ -78,6 +78,22 @@ Simple Uniform Hashing函数会将每一个元素以相等的概率hash去m个bi
 
 所以，当用k个Hash Function来处理这个元素的时候，某个特定的bit位$b_x$没有被设置为1的概率为：$(1-\frac{1}{m})^k$
 
+然后，当用k个Hash Function来处理n个元素的时候，某个特定的bit位$b_x$没有被设置为1的概率为：$(1-\frac{1}{m})^{kn}$
+
+相反，这个bit位被设置为1的概率为：$1-(1-\frac{1}{m})^{kn}$
+
+在查询阶段，如果这个元素在Bloom Filter中对应的的所有hash bits都被设置为了1，则这个元素被认为存在于查询集中。所以False Positive的概率为：
+
+p = $(1-(1-\frac{1}{m})^{kn})^k$
+
+$\lim\limits_{x\to0}(1+x)^{\frac{1}{x}}=e$ and $\lim\limits_{m\to\infty}(-\frac{1}{m})=0$
+
+$\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$\\ =$\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{-m\times\frac{-kn}{m}})^k$\\ =$(1-e^{-\frac{nk}{m}})^k$
+
+In the query stage, we consider that an element e is in a dataset, if all the hash bits for this
+element are set to 1 in the Bloom Filter formed by the elements of this dataset. So the false
+possitive rate is:
+
 ---未完待续
 
 
