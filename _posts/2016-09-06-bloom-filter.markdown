@@ -126,6 +126,14 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 
 \Rightarrow (1- b^{-k}) \cdot ln(1- b^{-k}) = b^{-k} \cdot ln(b^{-k}) （5）
 
+根据方程（5）两边的对称性，可以得到：1 - b^{-k} = b^{-k} （6）
+
+\Rightarrow e^{-\frac{kn}{m}} = \frac{1}{2} （7）
+
+\Rightarrow k = ln2 \cdot \frac{m}{n} （8）
+
+所以：p = f(k) = (1-\frac{1}{2})^{k} = (\frac{1}{2})^k = 2 ^ {ln2 \cdot \frac{m}{n}}
+
 
 
 
