@@ -109,6 +109,8 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 
 假设当一个Bloom Filter达到平衡状态的时候它含有n个元素，则下面这个方程描述了这个Bloom Filter的bit位的个数，与使用的hash function的个数及插入的元素个数之间的关系：$m = \frac{k \cdot n}{50\%} = 2 \cdot k \cdot n $ bits
 
+**Lemma 4:** 当$e^{-\frac{nk}{m}}$ = $\frac{1}{2}$时， False Positive概率p达到最小值。此时：k = ln2 $\times \frac{m}{n}$， p = $\frac{1}{2}^k$ = $2^{-ln2 \times \frac{m}{n}}$
+
 
 
 
