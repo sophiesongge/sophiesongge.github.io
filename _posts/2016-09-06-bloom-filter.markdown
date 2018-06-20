@@ -122,6 +122,10 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 对方程（2）两边求导，可以得到：\frac{1}{f(x)} \cdot f'(x) = ln(1-b^{-k}) + k \cdot \frac{1}{1-b^{-k}} \cdot (-1) \cdot (-b^{-k}) \cdot ln(b)
                 = ln(1-b^{-k}) + k \cdot \frac{b^{-k} \cdot ln(b)}{1-b^{-k}} （3）
 
+当方程（3）等于0的时候，方程（2）达到最小值。这时可以得到：ln(1-b^{-k}) + k \cdot \frac{b^{-k} \cdot ln(b)}{1 - b^{-k}} = 0 （4）
+
+\Rightarrow (1- b^{-k}) \cdot ln(1- b^{-k}) = b^{-k} \cdot ln(b^{-k}) （5）
+
 
 
 
