@@ -111,6 +111,8 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 
 **Lemma 4:** 当$e^{-\frac{nk}{m}}$ = $\frac{1}{2}$时， False Positive概率p达到最小值。此时：k = ln2 $\times \frac{m}{n}$， p = $\frac{1}{2}^k$ = $2^{-ln2 \times \frac{m}{n}}$
 
+**证明：** 根据Lemma 2， $p$ = $(1-e^{-\frac{nk}{m}})^k$
+
 
 
 
