@@ -76,6 +76,8 @@ Bloom Filter中每个参数的计算方式。
 **证明：**
 Simple Uniform Hashing函数会将每一个元素以相等的概率hash去m个bit位中的一个。当用一个确定的hash函数处理一个确定的元素，某个特定的bit位$b_x$没有被设置为1的概率为：$1-\frac{1}{m}$
 
+所以，当用k个Hash Function来处理这个元素的时候，某个特定的bit位$b_x$没有被设置为1的概率为：$(1-\frac{1}{m})^k$
+
 ---未完待续
 
 
