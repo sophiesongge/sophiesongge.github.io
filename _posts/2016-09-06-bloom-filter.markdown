@@ -86,6 +86,8 @@ Simple Uniform Hashing函数会将每一个元素以相等的概率hash去m个bi
 
 p = $(1-(1-\frac{1}{m})^{kn})^k$
 
+鉴于：
+
 $\lim\limits_{x\to0}(1+x)^{\frac{1}{x}}=e$
 
 $\lim\limits_{m\to\infty}(-\frac{1}{m})=0$
