@@ -134,6 +134,16 @@ $\Rightarrow k = ln2 \cdot \frac{m}{n}$ （8）
 
 所以：$p = f(k) = (1-\frac{1}{2})^{k} = (\frac{1}{2})^k = 2 ^ {ln2 \cdot \frac{m}{n}}$
 
+由Lemma 4可以退出以下定理：
+
+**定理1：** 已知一个Bloom Filter的False Positive为p，以及最多需插入元素的个数为n，则这个Bloom Filter的长度应为：$m = - \frac{n \cdot lnp}{(ln2)^2}$
+
+需用到的Hash Function的个数应为：$k = ln2 \cdot \frac{m}{n} = log_2\frac{1}{p}$
+
+
+
+
+
 
 
 
