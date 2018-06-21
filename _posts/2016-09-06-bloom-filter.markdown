@@ -5,7 +5,7 @@ date:   2016-09-06 11:42:55 +0200
 categories: big data
 use_math: true
 ---
-<font color="red">为了让文中公式正确显示，请让你的浏览器"加在不安全脚本"</font>
+<font color="red">为了让文中公式正确显示，请让你的浏览器"加载不安全的脚本"</font>
 ![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/script.png?raw=true)
 <br>
 
