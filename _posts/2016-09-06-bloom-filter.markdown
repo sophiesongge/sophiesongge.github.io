@@ -115,7 +115,7 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 
 所以，p可以被认为是k的一个函数：$p$ = $f(k)$ = $(1-e^{-\frac{nk}{m}})^k$
 
-则：f(k) = (1 - b^{-k})^k，b = e^{-\frac{n}{m}} （1）
+则：$f(k) = (1 - b^{-k})^k，b = e^{-\frac{n}{m}}$ （1）
 
 对方程（1）两边取log值，可以得到：$ln[ f(k)] = k \cdot ln(1-b^{-k})$ （2）
 
