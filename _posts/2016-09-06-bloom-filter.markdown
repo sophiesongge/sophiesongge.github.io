@@ -117,22 +117,22 @@ $\Rightarrow$ $\lim\limits_{m\to\infty}(1-(1-\frac{1}{m})^{kn})^k$ = $\lim\limit
 
 则：f(k) = (1 - b^{-k})^k，b = e^{-\frac{n}{m}} （1）
 
-对方程（1）两边取log值，可以得到：ln[ f(k)] = k \cdot ln(1-b^{-k}) （2）
+对方程（1）两边取log值，可以得到：$ln[ f(k)] = k \cdot ln(1-b^{-k})$ （2）
 
-对方程（2）两边求导，可以得到：\frac{1}{f(x)} \cdot f'(x) = ln(1-b^{-k}) + k \cdot \frac{1}{1-b^{-k}} \cdot (-1) \cdot (-b^{-k}) \cdot ln(b)
-                = ln(1-b^{-k}) + k \cdot \frac{b^{-k} \cdot ln(b)}{1-b^{-k}} （3）
+对方程（2）两边求导，可以得到：$\frac{1}{f(x)} \cdot f'(x) = ln(1-b^{-k}) + k \cdot \frac{1}{1-b^{-k}} \cdot (-1) \cdot (-b^{-k}) \cdot ln(b)
+                = ln(1-b^{-k}) + k \cdot \frac{b^{-k} \cdot ln(b)}{1-b^{-k}}$ （3）
 
-当方程（3）等于0的时候，方程（2）达到最小值。这时可以得到：ln(1-b^{-k}) + k \cdot \frac{b^{-k} \cdot ln(b)}{1 - b^{-k}} = 0 （4）
+当方程（3）等于0的时候，方程（2）达到最小值。这时可以得到：$ln(1-b^{-k}) + k \cdot \frac{b^{-k} \cdot ln(b)}{1 - b^{-k}} = 0$ （4）
 
-\Rightarrow (1- b^{-k}) \cdot ln(1- b^{-k}) = b^{-k} \cdot ln(b^{-k}) （5）
+$\Rightarrow (1- b^{-k}) \cdot ln(1- b^{-k}) = b^{-k} \cdot ln(b^{-k})$ （5）
 
-根据方程（5）两边的对称性，可以得到：1 - b^{-k} = b^{-k} （6）
+根据方程（5）两边的对称性，可以得到：$1 - b^{-k} = b^{-k}$ （6）
 
-\Rightarrow e^{-\frac{kn}{m}} = \frac{1}{2} （7）
+$\Rightarrow e^{-\frac{kn}{m}} = \frac{1}{2}$ （7）
 
-\Rightarrow k = ln2 \cdot \frac{m}{n} （8）
+$\Rightarrow k = ln2 \cdot \frac{m}{n}$ （8）
 
-所以：p = f(k) = (1-\frac{1}{2})^{k} = (\frac{1}{2})^k = 2 ^ {ln2 \cdot \frac{m}{n}}
+所以：$p = f(k) = (1-\frac{1}{2})^{k} = (\frac{1}{2})^k = 2 ^ {ln2 \cdot \frac{m}{n}}$
 
 
 
