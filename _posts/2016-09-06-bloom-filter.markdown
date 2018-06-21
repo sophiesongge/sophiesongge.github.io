@@ -141,16 +141,27 @@ $\Rightarrow k = ln2 \cdot \frac{m}{n}$ （8）
 需用到的Hash Function的个数应为：$k = ln2 \cdot \frac{m}{n} = log_2\frac{1}{p}$
 
 
+删除Bloom Filter中的元素
+==================
 
+在介绍Bloom Filter的实现之前，我希望先和大家探讨以下关于Bloom Filter中元素的删除的问题。上文介绍的传统的Bloom Filter是没有办法进行删除操作的，因为由于Hash Collision，如果单纯的把要删除的元素的相应bit位重置为0会误删掉其他元素。
 
+为了解决这一问题，我们可以把每个bit位换成一个counter，要删除某个元素的时候可以减少相应位的counter，这种Bloom Filter的变种被称为Counting Bloom Filter。它虽然为Bloom Filter增加了删除操作，但是它也同时增加了Bloom Filter的'占地面积'。
 
+那么有没有可能仍然用bit vector作为Bloom Filter的实现，同时增加删除功能呢？答案是有的，我最欣赏的一种实现叫Shifting Bloom Filter。它是由2016年一篇VLDB上的文章提出的，在这里我们简单介绍一下它的思想。在这篇文章中，作者发现通常我们需要再Bloom Filter中
+存储两类信息，（1）元素是否存在于数据集中（2）元素的附加信息。传统BF已经能很好的解决（1），在SFB中作者用一个offset来存储元素的附加信息，这个offset也是一个hash function，在将$h_i(e)$设置为1的同时，SFB将$h_i(e)+o(e)$也设置为1。感兴趣的同学可以阅读[这篇文章]。
+我们不再赘述。
 
+如果你也有自己偏爱的BF的变种，欢迎写邮件与我讨论。写邮件请按左侧信息栏，我的头像下方的信封按钮=^-^=。
 
+Bloom Filter的Java实现
+===================
 
-
-
+我总觉得实现部分最简单直接粗暴的方法就是[放代码]:P 。 代码中有详细的注解，这里我们就不再重复。
 
 
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
 [Balls into Bins]: https://en.wikipedia.org/wiki/Balls_into_bins
 [Simple Uniform Hashing Functions]: https://en.wikipedia.org/wiki/SUHA_(computer_science)
+[这篇文章]:http://www.vldb.org/pvldb/vol9/p408-yang.pdf
+[放代码]:https://github.com/sophiesongge/BloomFilter/blob/master/src/BloomFilter/BloomFilter/BloomFilter.java
