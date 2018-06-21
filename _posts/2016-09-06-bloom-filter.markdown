@@ -144,7 +144,7 @@ $\Rightarrow k = ln2 \cdot \frac{m}{n}$ （8）
 删除Bloom Filter中的元素
 ==================
 
-在介绍Bloom Filter的实现之前，我希望先和大家探讨以下关于Bloom Filter中元素的删除的问题。上文介绍的传统的Bloom Filter是没有办法进行删除操作的，因为由于Hash Collision，如果单纯的把要删除的元素的相应bit位重置为0会误删掉其他元素。
+在介绍Bloom Filter的实现之前，我希望先和大家探讨一下关于Bloom Filter中元素的删除的问题。上文介绍的传统的Bloom Filter是没有办法进行删除操作的，因为由于Hash Collision，如果单纯的把要删除的元素的相应bit位重置为0会误删掉其他元素。
 
 为了解决这一问题，我们可以把每个bit位换成一个counter，要删除某个元素的时候可以减少相应位的counter，这种Bloom Filter的变种被称为Counting Bloom Filter。它虽然为Bloom Filter增加了删除操作，但是它也同时增加了Bloom Filter的'占地面积'。
 
