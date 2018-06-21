@@ -5,6 +5,9 @@ date:   2016-09-06 11:42:55 +0200
 categories: big data
 use_math: true
 ---
+<font color="red">为了让文中公式正确显示，请让你的浏览器"加在不安全脚本"</font>
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/script.png?raw=true)
+<br>
 
 在我们设计一个算法的时候，经常要考虑时间效率和空间效率之间的平衡。以时间换空间，或者以空间换时间在大多数情况下都是不可避免的操作。如果我告诉你，有那么个数据结构，它在时间效率和空间效率上都很优秀，意外不意外，惊喜不惊喜？！
 
