@@ -160,6 +160,12 @@ Bloom Filter的Java实现
 我总觉得实现部分最简单直接粗暴的方法就是[放代码]:P 。 代码中有详细的注解，这里我们就不再重复。
 
 
+如果您觉得本文有用, 请扫描一下二维码, 随意打赏 =^-^=
+
+![Image](https://github.com/sophiesongge/sophiesongge.github.io/blob/master/images/dashang.JPG?raw=true=10x10)
+
+
+
 [Bloom Filter]: https://en.wikipedia.org/wiki/Bloom_filter
 [Balls into Bins]: https://en.wikipedia.org/wiki/Balls_into_bins
 [Simple Uniform Hashing Functions]: https://en.wikipedia.org/wiki/SUHA_(computer_science)
