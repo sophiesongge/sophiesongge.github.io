@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "First Post!"
 date:   2016-08-31 15:42:55 +0200
 categories: life
